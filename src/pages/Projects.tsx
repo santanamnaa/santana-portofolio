@@ -60,7 +60,7 @@ const allProjects = [
   },
   {
     id: "aitiserve",
-    title: "PT AITISERVE DJAYA ABADI — Company Profile",
+    title: "PT AITISERVE DJAYA NARAYA — Company Profile",
     description: "AI-driven solutions and digital transformation partner",
     longDescription: "PT AITISERVE DJAYA ABADI is a technology company specializing in artificial intelligence, automation, and digital transformation services. We empower businesses with innovative AI solutions, custom software development, and seamless system integration to drive operational excellence and growth.",
     stack: ["AI Solutions", "Custom Software", "System Integration", "Cloud Services", "Automation"],
