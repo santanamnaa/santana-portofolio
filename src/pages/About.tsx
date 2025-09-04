@@ -266,9 +266,7 @@ const About = () => {
                   <Button asChild>
                     <a href="mailto:santanamnaa.dev@gmail.com"><Mail className="h-4 w-4 mr-2" /> Get in Touch</a>
                   </Button>
-                  <Button variant="outline" asChild>
-                    <a href="https://tspdigital.agency" target="_blank" rel="noreferrer"><ExternalLink className="h-4 w-4 mr-2" /> See My Work</a>
-                  </Button>
+                  
                 </div>
               </div>
             </div>

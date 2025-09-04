@@ -372,10 +372,6 @@ const Services = () => {
                     <ArrowRight className="h-5 w-5" />
                   </a>
                 </Button>
-                <Button variant="outline" size="lg" className="gap-2">
-                  View Portfolio
-                  <ArrowRight className="h-5 w-5" />
-                </Button>
               </div>
             </div>
           </div>
