@@ -41,18 +41,26 @@ const experiences: Experience[] = [
     technologies: ["React.js", "Next.js", "Node.js", "Supabase", "TypeScript"]
   },
   {
-    title: "Business Analyst (Freelance)",
-    company: "PT. Gunung Amal Solutions Internasional",
-    location: "Bandung",
-    period: "Jun 2024",
-    type: "Contract",
+    title: "Chief Executive Officer (CEO)",
+    company: "TSPDigital (Transformasi Strategi Progresif Digital)",
+    location: "https://tspdigital.agency",
+    period: "Sep 2024 – Present",
+    type: "Founder & Executive",
     achievements: [
-      "Designed Audit Trail Management System focusing on usability and security",
-      "Bridged business requirements with technical implementation",
-      "Delivered comprehensive system design documentation"
+      "Founded and scaled a digital agency focusing on SaaS solutions, AI integration, and digital strategy for Indonesian SMEs (UMKM)",
+      "Developed multi-layered product ecosystem including website builder, AI-powered chatbots, and digital content products",
+      "Led cross-functional teams in design, development, and marketing to deliver cost-efficient and scalable solutions",
+      "Built partnerships and client pipelines by aligning business models with local market needs and global best practices"
     ],
-    technologies: ["System Design", "Business Analysis", "Documentation"]
-  }
+    technologies: [
+      "Business Strategy",
+      "AI/ML Integration",
+      "Product Development",
+      "Team Leadership",
+      "Go-to-Market Execution"
+    ]
+}
+
 ];
 
 export const Experience = () => {
