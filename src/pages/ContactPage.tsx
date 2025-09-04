@@ -31,20 +31,20 @@ const contactInfo = [
     href: "mailto:santanamnaa.dev@gmail.com",
     description: "Business inquiries & collaboration"
   },
-  {
-    icon: Mail,
-    label: "Alternative Email",
-    value: "santanamnaa8@gmail.com",
-    href: "mailto:santanamnaa8@gmail.com",
-    description: "General correspondence"
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+62 823-2187-9086",
-    href: "tel:+6282321879086",
-    description: "WhatsApp & calls available"
-  },
+  // {
+  //   icon: Mail,
+  //   label: "Alternative Email",
+  //   value: "santanamnaa8@gmail.com",
+  //   href: "mailto:santanamnaa8@gmail.com",
+  //   description: "General correspondence"
+  // },
+  // {
+  //   icon: Phone,
+  //   label: "Phone",
+  //   value: "+62 823-2187-9086",
+  //   href: "tel:+6282321879086",
+  //   description: "WhatsApp & calls available"
+  // },
   {
     icon: MapPin,
     label: "Location",
@@ -58,8 +58,8 @@ const socialLinks = [
   {
     icon: ExternalLink,
     label: "Website",
-    value: "santanamena.com",
-    href: "https://santanamena.com",
+    value: "santanamnaa.dev",
+    href: "https://santanamnaa.dev",
     description: "Personal website & blog"
   },
   {

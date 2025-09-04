@@ -15,12 +15,12 @@ const contactInfo = [
     value: "santanamnaa.dev@gmail.com",
     href: "mailto:santanamnaa.dev@gmail.com"
   },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+62 823-2187-9086",
-    href: "tel:+6282321879086"
-  },
+  // {
+  //   icon: Phone,
+  //   label: "Phone",
+  //   value: "+62 823-2187-9086",
+  //   href: "tel:+6282321879086"
+  // },
   {
     icon: MapPin,
     label: "Location",
@@ -45,8 +45,8 @@ const socialLinks = [
   {
     icon: ExternalLink,
     label: "Website",
-    value: "santanamena.com",
-    href: "https://santanamena.com"
+    value: "santanamnaa.dev",
+    href: "https://santanamnaa.dev"
   }
 ];
 

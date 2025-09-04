@@ -61,7 +61,7 @@ export const Header = () => {
                   </Link>
                 );
               })}
-              <Button
+              {/* <Button
                 asChild
                 variant="ghost"
                 size="sm"
@@ -78,7 +78,7 @@ export const Header = () => {
                   <Download className="h-3 w-3" />
                   resume
                 </a>
-              </Button>
+              </Button> */}
             </div>
 
             {/* Mobile Menu Toggle */}
