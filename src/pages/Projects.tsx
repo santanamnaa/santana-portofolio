@@ -327,7 +327,7 @@ const allProjects = [
     github: "https://github.com/santanamnaa/easeneura",
     demo: "https://github.com/santanamnaa/easeneura?tab=readme-ov-file#design",
     category: "Mobile Development",
-    status: "Development",
+    status: "Completed",
     preview: {
       features: ["Professional Matching", "Self-Care Tools", "Wellness Tracking", "Cross-Platform"],
       tech_highlights: "Flutter Multi-Platform"
