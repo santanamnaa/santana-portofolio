@@ -42,10 +42,10 @@ const About = () => {
   ];
 
   const organizations = [
-    { name: "HIMTI", role: "Active Member", description: "Computer Science Student Association" },
+    { name: "HIMTI", role: "Member", description: "Computer Science Student Association" },
     { name: "BNCC", role: "Participant", description: "BINUS Computer Club" },
     { name: "GDSC", role: "Member", description: "Google Developer Student Clubs" },
-    { name: "BNEC", role: "Member", description: "BINUS English Club" }
+    { name: "BNEC", role: "Active Member", description: "BINUS English Club" }
   ];
 
   const highlights = [
