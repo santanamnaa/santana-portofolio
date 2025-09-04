@@ -77,7 +77,7 @@ const About = () => {
               <p className="text-xl text-muted-foreground leading-relaxed">
                 A passionate Computer Science student specializing in AI Engineering and Full-Stack Development. 
                 I'm dedicated to building innovative digital solutions that make a real impact, particularly 
-                for Indonesian SMEs through my work with TSP Digital and Strategy Era Digital.
+                for Indonesian SMEs through my work with TSP Digital.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-3 mt-6">
                 {highlights.map((h, i) => (
