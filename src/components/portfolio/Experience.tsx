@@ -43,7 +43,7 @@ const experiences: Experience[] = [
   {
     title: "Chief Executive Officer (CEO)",
     company: "TSPDigital (Transformasi Strategi Progresif Digital)",
-    location: "https://tspdigital.agency",
+    location: "tspdigital.agency",
     period: "Sep 2024 – Present",
     type: "Founder & Executive",
     achievements: [
