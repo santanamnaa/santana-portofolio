@@ -5,23 +5,25 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Github, 
-  Linkedin, 
-  ExternalLink, 
-  Calendar, 
-  Target, 
-  Zap, 
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Github,
+  Linkedin,
+  ExternalLink,
+  Calendar,
+  Target,
+  Zap,
   TrendingUp,
   Send,
   MessageSquare,
   Clock,
   Globe
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
 
 const contactInfo = [
   {
@@ -121,22 +123,35 @@ const serviceAreas = [
 ];
 
 const ContactPage = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-    projectType: ""
-  });
+  const form = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-  };
 
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    if (!form.current) return;
+
+    setIsSubmitting(true);
+    toast.info("Sending your message...");
+
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    emailjs.sendForm(serviceID, templateID, form.current, publicKey)
+      .then(
+        () => {
+          toast.success("Message sent successfully!");
+          form.current?.reset();
+        },
+        (error) => {
+          toast.error("Failed to send message. Please try again later.");
+          console.error("EmailJS error:", error);
+        },
+      )
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
 
   return (
@@ -191,15 +206,14 @@ const ContactPage = () => {
                     </p>
                   </CardHeader>
                   <CardContent className="space-y-6">
-                    <form onSubmit={handleSubmit} className="space-y-4">
+                    <form ref={form} onSubmit={sendEmail} className="space-y-4">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="name">Full Name</Label>
                           <Input
                             id="name"
+                            name="user_name"
                             placeholder="Your full name"
-                            value={formData.name}
-                            onChange={(e) => handleInputChange("name", e.target.value)}
                             required
                           />
                         </div>
@@ -207,10 +221,9 @@ const ContactPage = () => {
                           <Label htmlFor="email">Email Address</Label>
                           <Input
                             id="email"
+                            name="user_email"
                             type="email"
                             placeholder="your.email@example.com"
-                            value={formData.email}
-                            onChange={(e) => handleInputChange("email", e.target.value)}
                             required
                           />
                         </div>
@@ -220,9 +233,8 @@ const ContactPage = () => {
                         <Label htmlFor="subject">Subject</Label>
                         <Input
                           id="subject"
+                          name="subject"
                           placeholder="Project inquiry, collaboration, etc."
-                          value={formData.subject}
-                          onChange={(e) => handleInputChange("subject", e.target.value)}
                           required
                         />
                       </div>
@@ -230,9 +242,9 @@ const ContactPage = () => {
                       <div className="space-y-2">
                         <Label htmlFor="projectType">Project Type</Label>
                         <select
+                          id="projectType"
+                          name="project_type"
                           className="w-full p-2 border border-border rounded-md bg-background"
-                          value={formData.projectType}
-                          onChange={(e) => handleInputChange("projectType", e.target.value)}
                         >
                           <option value="">Select project type...</option>
                           <option value="ai-engineering">AI Engineering</option>
@@ -247,17 +259,16 @@ const ContactPage = () => {
                         <Label htmlFor="message">Message</Label>
                         <Textarea
                           id="message"
+                          name="message"
                           placeholder="Tell me about your project, timeline, budget, and any specific requirements..."
                           rows={6}
-                          value={formData.message}
-                          onChange={(e) => handleInputChange("message", e.target.value)}
                           required
                         />
                       </div>
                       
-                      <Button type="submit" size="lg" className="w-full gap-2">
+                      <Button type="submit" size="lg" className="w-full gap-2" disabled={isSubmitting}>
                         <Send className="h-5 w-5" />
-                        Send Message
+                        {isSubmitting ? "Sending..." : "Send Message"}
                       </Button>
                     </form>
                   </CardContent>
