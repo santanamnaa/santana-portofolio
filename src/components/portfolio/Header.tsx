@@ -22,6 +22,7 @@ export const Header = () => {
     { path: "/about", label: "about" },
     { path: "/services", label: "services" },
     { path: "/projects", label: "projects" },
+    { path: "https://medium.com/@santanamnaa", label: "blog" },
     { path: "/contact", label: "contact" },
   ];
 
