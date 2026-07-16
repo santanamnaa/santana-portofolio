@@ -16,7 +16,7 @@ const About = () => {
       description: "B.Sc. in Computer Science with a focus on AI Engineering and Software Development"
     },
     {
-      year: "Jan 2026-Mar 2026",
+      year: "Jan 2026-Feb 2026",
       title: "Full-Stack Developer (Contract)",
       organization: "PT Aitiserve Djaya Naraya",
       location: "Bandung, Indonesia",
@@ -40,7 +40,7 @@ const About = () => {
       description: "Developed custom web applications, online booking systems, and responsive business profiles"
     },
     {
-      year: "Aug 2025-Jun 2026",
+      year: "Feb 2026-Jun 2026",
       title: "Co-Founder & Technical Lead",
       organization: "TSP Digital",
       location: "Bandung, Indonesia",
@@ -73,7 +73,7 @@ const About = () => {
   ];
 
   const quickStats = [
-    { label: "GitHub Repos", value: "100+", icon: Sparkles },
+    { label: "GitHub Repos", value: "120+", icon: Sparkles },
     { label: "Projects Deployed", value: "40", icon: Users },
     { label: "Community Stars", value: "20+", icon: Award },
     { label: "Years Coding", value: "3+", icon: BookOpen },
@@ -92,9 +92,7 @@ const About = () => {
                 About <span className="text-primary">Me</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                A passionate Computer Science student specializing in AI Engineering and Full-Stack Development. 
-                I'm dedicated to building innovative digital solutions that make a real impact, particularly 
-                for Indonesian SMEs through my work with TSP Digital.
+                Detail-oriented and results-driven Software Engineer with a solid foundation in building full-stack web and mobile applications, backend REST APIs, and containerized architectures. Google AI Professional and SAP Analytics Cloud certified.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-3 mt-6">
                 {highlights.map((h, i) => (
@@ -106,7 +104,7 @@ const About = () => {
 
               <div className="flex flex-wrap items-center justify-center gap-3 mt-8 fade-in-up" style={{ animationDelay: `260ms` }}>
                 <Button asChild>
-                  <a href="mailto:santanamnaa.dev@gmail.com">
+                  <a href="mailto:santanamnaadev@gmail.com">
                     <Mail className="h-4 w-4 mr-2" /> Contact Me
                   </a>
                 </Button>
@@ -281,7 +279,7 @@ const About = () => {
                 <p className="text-muted-foreground mb-4">Open to collaborations, internships, and AI projects.</p>
                 <div className="flex justify-center gap-3">
                   <Button asChild>
-                    <a href="mailto:santanamnaa.dev@gmail.com"><Mail className="h-4 w-4 mr-2" /> Get in Touch</a>
+                    <a href="mailto:santanamnaadev@gmail.com"><Mail className="h-4 w-4 mr-2" /> Get in Touch</a>
                   </Button>
                   
                 </div>

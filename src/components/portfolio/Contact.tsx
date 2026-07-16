@@ -14,8 +14,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "santanamnaa.dev@gmail.com",
-    href: "mailto:santanamnaa.dev@gmail.com"
+    value: "santanamnaadev@gmail.com",
+    href: "mailto:santanamnaadev@gmail.com"
   },
   // {
   //   icon: Phone,
