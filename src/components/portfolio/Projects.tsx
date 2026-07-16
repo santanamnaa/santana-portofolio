@@ -27,7 +27,7 @@ const featuredProjects: Project[] = [
     stack: ["Python", "YOLOv8", "OpenVINO", "OpenCV", "Django", "FastAPI", "Docker"],
     stars: 0,
     updated: "2026-01-27",
-    github: "https://github.com/santanamnaa/movaads-ai-iot",
+    github: null,
     demo: "https://movaads.com",
     category: "AI/ML"
   },
@@ -63,7 +63,7 @@ const featuredProjects: Project[] = [
     stack: ["TypeScript", "Next.js", "FastAPI", "PostgreSQL", "PostGIS", "Redis", "Leaflet"],
     stars: 0,
     updated: "2026-05-12",
-    github: "https://github.com/gentaArnezzi/tamankehati",
+    github: null,
     demo: "https://youtu.be/TQILv-9CpYU",
     category: "Database"
   },
@@ -75,7 +75,7 @@ const featuredProjects: Project[] = [
     stack: ["TypeScript", "React Native", "Expo Router", "TailwindCSS", "Node.js"],
     stars: 0,
     updated: "2026-06-16",
-    github: "https://github.com/santanamnaa/siring-saijaan",
+    github: null,
     demo: "https://play.google.com/store/apps/details?id=com.siringsaijaan",
     category: "Mobile Development"
   },
@@ -87,7 +87,7 @@ const featuredProjects: Project[] = [
     stack: ["Vue.js", "Nuxt 3", "Nuxt Content", "Tailwind CSS", "Vercel"],
     stars: 0,
     updated: "2026-07-02",
-    github: "https://github.com/santanamnaa/golkar-jabar",
+    github: null,
     demo: "https://www.golkarjabar.id",
     category: "Web Development"
   }
