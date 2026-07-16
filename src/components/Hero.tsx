@@ -30,7 +30,7 @@ export const Hero = () => {
           
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
-            Detail-oriented and results-driven engineer specializing in building high-performance full-stack web/mobile applications, robust backend REST APIs, and Retrieval-Augmented Generation (RAG) AI workflows. Co-Founder & Technical Lead at TSP Digital.
+            Detail-oriented and results-driven engineer specializing in building high-performance full-stack web/mobile applications, robust backend REST APIs, and Retrieval-Augmented Generation (RAG) AI workflows.
           </p>
           
           {/* CTA Buttons */}
