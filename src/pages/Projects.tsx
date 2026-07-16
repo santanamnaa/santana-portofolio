@@ -800,36 +800,36 @@ const allProjects = [
   },
   {
     id: "drawntexturedyarn",
-    title: "Drawn Textured Yarn — Tracker",
-    description: "Yarn production tracking and scheduling database mock",
-    longDescription: "Mock factory logging application tracking batch production stages, scheduling status, and shipment dates.",
+    title: "Drawn Textured Yarn — Company Website",
+    description: "Official company website for a DTY manufacturing business",
+    longDescription: "Professional company website for a Drawn Textured Yarn manufacturer. Showcases products, company profile, and production capabilities for a textile industry client.",
     stack: ["TypeScript", "React", "Tailwind CSS", "Vercel"],
     stars: 0,
     updated: "2026-05-21",
-    github: "https://github.com/santanamnaa/drawntexturedyarn",
-    demo: null,
+    github: null,
+    demo: "http://drawntexturedyarn.com/",
     category: "Web Development",
-    status: "Prototype",
+    status: "Live",
     preview: {
-      features: ["Factory inventory mock data", "Dynamic status boards", "Fast search filters"],
+      features: ["Company profile showcase", "Product catalog", "Responsive design", "Fast loading"],
       tech_highlights: "React + Tailwind + Vercel"
     }
   },
   {
-    id: "jaratara3",
-    title: "Jaratara 3 — Organizer",
-    description: "Travel coordinator dashboard and regional map routing",
-    longDescription: "Travel dashboard showing coordinate routing, hotel locations, custom itinerary builders, and weather alerts.",
-    stack: ["TypeScript", "Next.js", "TailwindCSS", "Mapbox SDK"],
+    id: "jaratara",
+    title: "Jaratara — Travel & Lifestyle Platform",
+    description: "Travel discovery and lifestyle platform for Indonesian destinations",
+    longDescription: "A full-featured travel and lifestyle discovery platform serving Indonesian destinations. Features destination guides, itinerary builders, and curated local experiences.",
+    stack: ["TypeScript", "Next.js", "TailwindCSS", "Vercel"],
     stars: 0,
     updated: "2026-07-09",
-    github: "https://github.com/santanamnaa/jaratara3",
-    demo: null,
+    github: null,
+    demo: "https://jaratara.com",
     category: "Web Development",
-    status: "Prototype",
+    status: "Live",
     preview: {
-      features: ["Mapbox routing coordination", "Weather forecast components", "Itinerary planning layouts"],
-      tech_highlights: "Next.js + Mapbox API"
+      features: ["Destination discovery guides", "Itinerary planning", "Curated local experiences", "Responsive mobile design"],
+      tech_highlights: "Next.js + Vercel"
     }
   }
 ];

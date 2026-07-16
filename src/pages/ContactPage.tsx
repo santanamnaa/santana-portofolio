@@ -21,16 +21,16 @@ import {
   Clock,
   Globe
 } from "lucide-react";
-import { useState, useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { toast } from "sonner";
+import { useState } from "react";
+
+const TARGET_EMAIL = "santanamnaa.dev@gmail.com";
 
 const contactInfo = [
   {
     icon: Mail,
     label: "Primary Email",
-    value: "santanamnaadev@gmail.com",
-    href: "mailto:santanamnaadev@gmail.com",
+    value: TARGET_EMAIL,
+    href: `mailto:${TARGET_EMAIL}`,
     description: "Business inquiries & collaboration"
   },
   // {
@@ -123,35 +123,28 @@ const serviceAreas = [
 ];
 
 const ContactPage = () => {
-  const form = useRef<HTMLFormElement>(null);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    projectType: "",
+    message: ""
+  });
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-
-    if (!form.current) return;
-
     setIsSubmitting(true);
-    toast.info("Sending your message...");
-
-    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-    emailjs.sendForm(serviceID, templateID, form.current, publicKey)
-      .then(
-        () => {
-          toast.success("Message sent successfully!");
-          form.current?.reset();
-        },
-        (error) => {
-          toast.error("Failed to send message. Please try again later.");
-          console.error("EmailJS error:", error);
-        },
-      )
-      .finally(() => {
-        setIsSubmitting(false);
-      });
+    const subjectLine = encodeURIComponent(`[Portfolio] ${formData.subject || 'Contact from ' + formData.name}`);
+    const bodyText = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nProject Type: ${formData.projectType || 'N/A'}\n\nMessage:\n${formData.message}`
+    );
+    window.location.href = `mailto:${TARGET_EMAIL}?subject=${subjectLine}&body=${bodyText}`;
+    setIsSubmitting(false);
   };
 
   return (
@@ -206,23 +199,25 @@ const ContactPage = () => {
                     </p>
                   </CardHeader>
                   <CardContent className="space-y-6">
-                    <form ref={form} onSubmit={sendEmail} className="space-y-4">
+                    <form onSubmit={sendEmail} className="space-y-4">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="name">Full Name</Label>
                           <Input
                             id="name"
-                            name="user_name"
+                            value={formData.name}
+                            onChange={handleChange}
                             placeholder="Your full name"
                             required
                           />
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="email">Email Address</Label>
+                          <Label htmlFor="email">Your Email</Label>
                           <Input
                             id="email"
-                            name="user_email"
                             type="email"
+                            value={formData.email}
+                            onChange={handleChange}
                             placeholder="your.email@example.com"
                             required
                           />
@@ -233,7 +228,8 @@ const ContactPage = () => {
                         <Label htmlFor="subject">Subject</Label>
                         <Input
                           id="subject"
-                          name="subject"
+                          value={formData.subject}
+                          onChange={handleChange}
                           placeholder="Project inquiry, collaboration, etc."
                           required
                         />
@@ -243,7 +239,8 @@ const ContactPage = () => {
                         <Label htmlFor="projectType">Project Type</Label>
                         <select
                           id="projectType"
-                          name="project_type"
+                          value={formData.projectType}
+                          onChange={handleChange}
                           className="w-full p-2 border border-border rounded-md bg-background"
                         >
                           <option value="">Select project type...</option>
@@ -259,7 +256,8 @@ const ContactPage = () => {
                         <Label htmlFor="message">Message</Label>
                         <Textarea
                           id="message"
-                          name="message"
+                          value={formData.message}
+                          onChange={handleChange}
                           placeholder="Tell me about your project, timeline, budget, and any specific requirements..."
                           rows={6}
                           required
@@ -268,8 +266,12 @@ const ContactPage = () => {
                       
                       <Button type="submit" size="lg" className="w-full gap-2" disabled={isSubmitting}>
                         <Send className="h-5 w-5" />
-                        {isSubmitting ? "Sending..." : "Send Message"}
+                        {isSubmitting ? "Opening email app..." : "Send via Email App"}
                       </Button>
+                      <p className="text-xs text-muted-foreground text-center">
+                        Will open your email client pre-filled and send to{" "}
+                        <span className="text-foreground font-medium">{TARGET_EMAIL}</span>
+                      </p>
                     </form>
                   </CardContent>
                 </Card>
@@ -346,7 +348,7 @@ const ContactPage = () => {
                 {/* Quick Actions */}
                 <div className="space-y-3">
                   <Button size="lg" className="w-full gap-2" asChild>
-                    <a href="mailto:santanamnaa.dev@gmail.com">
+                    <a href={`mailto:${TARGET_EMAIL}`}>
                       <Mail className="h-5 w-5" />
                       Email Me
                     </a>

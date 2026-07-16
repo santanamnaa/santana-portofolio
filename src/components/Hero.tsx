@@ -53,7 +53,7 @@ export const Hero = () => {
             {[
               { icon: Github, href: "https://github.com/santanamnaa", label: "GitHub" },
               { icon: Linkedin, href: "https://linkedin.com/in/santana-mena", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:santanamnaadev@gmail.com", label: "Email" },
+              { icon: Mail, href: "mailto:santanamnaa.dev@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
