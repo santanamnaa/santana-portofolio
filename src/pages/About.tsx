@@ -11,33 +11,49 @@ const About = () => {
       year: "2022-2026",
       title: "Computer Science Student",
       organization: "Bina Nusantara University (BINUS)",
-      location: "Jakarta, Indonesia",
+      location: "Bandung, Indonesia",
       type: "Education",
-      description: "Pursuing B.Sc. in Computer Science with focus on AI Engineering and Software Development"
+      description: "B.Sc. in Computer Science with a focus on AI Engineering and Software Development"
     },
     {
-      year: "2025-Present",
-      title: "Full-Stack Developer Intern",
+      year: "Jan 2026-Mar 2026",
+      title: "Full-Stack Developer (Contract)",
+      organization: "PT Aitiserve Djaya Naraya",
+      location: "Bandung, Indonesia",
+      type: "Work",
+      description: "Developed corporate portals and school platforms using React/Next.js, optimized bundles, and built document conversion tools in Python"
+    },
+    {
+      year: "Feb 2025-Feb 2026",
+      title: "Full-Stack Developer & Business Analyst Intern",
       organization: "PT. Gunung Amal Solutions Internasional",
       location: "Bandung, Indonesia",
       type: "Work",
-      description: "Building enterprise management systems with React, Node.js, and cloud technologies"
+      description: "Designed and built internal HRMS/Project Management databases using Node.js and PostgreSQL. Designed security audit processes"
     },
     {
       year: "2023-2025",
-      title: "Freelance Developer",
-      organization: "Multiple Clients",
+      title: "Full-Stack Developer (Contract)",
+      organization: "Multiple Clients (e.g. Suma Barber)",
       location: "Remote",
       type: "Work",
-      description: "Developing custom web applications and digital solutions for various businesses"
+      description: "Developed custom web applications, online booking systems, and responsive business profiles"
     },
     {
-      year: "2024",
-      title: "Business Analyst",
-      organization: "PT. Gunung Amal Solutions Internasional",
+      year: "Aug 2025-Jun 2026",
+      title: "Co-Founder & Technical Lead",
+      organization: "TSP Digital",
       location: "Bandung, Indonesia",
-      type: "Contract",
-      description: "Designed comprehensive audit trail management system bridging business and technical requirements"
+      type: "Leadership",
+      description: "Led a team of developers delivering 10+ client solutions. Developed custom LangGraph agents and TiDB Cloud Vector RAG systems"
+    },
+    {
+      year: "Feb 2023-Feb 2026",
+      title: "International Projects Coordinator",
+      organization: "Digital Language Learning Center (DLLC) BINUS",
+      location: "Bandung, Indonesia",
+      type: "Leadership",
+      description: "Coordinated 7 international collaborative programs and cultural exchanges with global university partners"
     }
   ];
 
@@ -45,21 +61,22 @@ const About = () => {
     { name: "HIMTI", role: "Member", description: "Computer Science Student Association" },
     { name: "BNCC", role: "Participant", description: "BINUS Computer Club" },
     { name: "GDSC", role: "Member", description: "Google Developer Student Clubs" },
-    { name: "BNEC", role: "Active Member", description: "BINUS English Club" }
+    { name: "BNEC", role: "Branding & Public Affairs Specialist", description: "BINUS English Club" },
+    { name: "ESSE BINUS", role: "Freshmen Partner Mentor", description: "Guiding first-year Computer Science students" }
   ];
 
   const highlights = [
-    "RAG + LLM (TiDB Cloud VECTOR)",
-    "Full‑stack: React/Next.js + FastAPI",
-    "Observability: Langfuse, RAGAS",
-    "Deployment: Vercel, Docker",
+    "RAG & Multi-Agent Systems",
+    "Full-Stack: React/Next.js + FastAPI",
+    "Mobile: Flutter & React Native",
+    "Deployment: Docker, Vercel, AWS",
   ];
 
   const quickStats = [
-    { label: "Projects", value: "25+", icon: Sparkles },
-    { label: "Clients", value: "8+", icon: Users },
-    { label: "Open‑source Stars", value: "10+", icon: Award },
-    { label: "Years Coding", value: "3", icon: BookOpen },
+    { label: "GitHub Repos", value: "100+", icon: Sparkles },
+    { label: "Projects Deployed", value: "40", icon: Users },
+    { label: "Community Stars", value: "20+", icon: Award },
+    { label: "Years Coding", value: "3+", icon: BookOpen },
   ];
 
   return (

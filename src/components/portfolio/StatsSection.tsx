@@ -7,15 +7,15 @@ const stats = [
   {
     icon: Code,
     label: "Public Repositories",
-    value: 24,
-    suffix: "+",
-    description: "Open source projects",
+    value: 89,
+    suffix: "",
+    description: "GitHub repositories",
     color: "text-blue-400"
   },
   {
     icon: Star,
     label: "GitHub Stars",
-    value: 25,
+    value: 20,
     suffix: "+",
     description: "Community appreciation",
     color: "text-yellow-400"
@@ -47,18 +47,19 @@ const stats = [
   {
     icon: GitFork,
     label: "Projects Deployed",
-    value: 12,
-    suffix: "+",
-    description: "Live applications",
+    value: 40,
+    suffix: "",
+    description: "Vercel applications",
     color: "text-pink-400"
   }
 ];
 
 const achievements = [
-  "ICPC Asia Jakarta Participant",
-  "ICP Hacker House Bali 2024",
-  "West Java Language Ambassador Finalist",
-  "Outstanding Student Award",
+  "ICPC Asia Jakarta Regional Competitor",
+  "ICP Chain Fusion Hacker House 2024 Finalist (Bali)",
+  "West Java Language Ambassador 2023 Finalist (Ikon Terfotogenik Putra)",
+  "BINUS Outstanding Student Award",
+  "Google AI Professional Certified",
   "SAP Analytics Cloud Certified"
 ];
 

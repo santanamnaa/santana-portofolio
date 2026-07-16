@@ -576,6 +576,261 @@ const allProjects = [
       ],
       tech_highlights: "WebXR + Three.js + React"
     }
+  },
+  {
+    id: "movaads-ai-iot",
+    title: "Movaads — AIoT Edge Vision System",
+    description: "YOLOv8 & Intel OpenVINO edge-based ad analytics system",
+    longDescription: "Edge-based computer vision system built for PT Lumina Media Digital to track and analyze advertising interaction. Implements real-time density detection and demographics tracking on IoT nodes.",
+    stack: ["Python", "YOLOv8", "OpenVINO", "OpenCV", "Django", "FastAPI", "Docker"],
+    stars: 0,
+    updated: "2026-01-27",
+    github: "https://github.com/santanamnaa/movaads-ai-iot",
+    demo: "https://movaads.com",
+    category: "AI/ML",
+    status: "Production",
+    preview: {
+      features: ["Real-time density detection", "Intel OpenVINO optimization", "Demographics tracking", "Django dashboard"],
+      tech_highlights: "YOLOv8 + OpenVINO Edge AI"
+    }
+  },
+  {
+    id: "ai-skill-gap-analyst",
+    title: "AI Skill Gap Analyst",
+    description: "LangGraph-powered system mapping candidate CV competency gaps",
+    longDescription: "An AI-powered recruiter agent that parses CVs, extracts technical skills using custom Named Entity Recognition (NER), and maps competency gaps against job profile requirements with 92% accuracy.",
+    stack: ["Python", "LangGraph", "spaCy", "Ollama", "DeepSeek", "Streamlit"],
+    stars: 0,
+    updated: "2025-09-22",
+    github: "https://github.com/santanamnaa/ai-skill-gap-analyst",
+    demo: null,
+    category: "AI/ML",
+    status: "Production",
+    preview: {
+      features: ["Custom NER for skills extraction", "LangGraph multi-agent flow", "Ollama/DeepSeek evaluation", "92% matching accuracy"],
+      tech_highlights: "LangGraph + Custom NLP"
+    }
+  },
+  {
+    id: "tamankehati",
+    title: "Pangkalan Data Taman Kehati",
+    description: "Full-stack environmental database for Ministry of Environment",
+    longDescription: "National environmental tracking database system built in compliance with Permen LH 03/2012. Includes public directories, observation maps, Shannon-Wiener indexes, and verification workflows.",
+    stack: ["TypeScript", "Next.js", "FastAPI", "PostgreSQL", "PostGIS", "Redis", "Leaflet"],
+    stars: 0,
+    updated: "2026-05-12",
+    github: "https://github.com/gentaArnezzi/tamankehati",
+    demo: "https://youtu.be/TQILv-9CpYU",
+    category: "Database",
+    status: "Live",
+    preview: {
+      features: ["Shannon-Wiener calculation index", "Leaflet observation mapping", "FastAPI backend architecture", "CSV/GeoJSON validation import"],
+      tech_highlights: "Next.js + FastAPI + PostGIS"
+    }
+  },
+  {
+    id: "golkar-jabar",
+    title: "Golkar Jawa Barat — Official Portal",
+    description: "Official regional portal built with Vue.js/Nuxt 3",
+    longDescription: "A high-performance civic and news portal developed for Golkar Jawa Barat. Built with Nuxt 3, Nuxt Content, and Tailwind CSS for rapid loading speeds.",
+    stack: ["Vue.js", "Nuxt 3", "Nuxt Content", "Tailwind CSS", "Vercel"],
+    stars: 0,
+    updated: "2026-07-02",
+    github: "https://github.com/santanamnaa/golkar-jabar",
+    demo: "https://www.golkarjabar.id",
+    category: "Web Development",
+    status: "Live",
+    preview: {
+      features: ["Civic news management", "Nuxt Content optimization", "Dynamic tailwind UI", "Fast static loading"],
+      tech_highlights: "Nuxt 3 + Vercel Deployment"
+    }
+  },
+  {
+    id: "siring-saijaan",
+    title: "Siring Saijaan — Public Service Mobile App",
+    description: "React Native cross-platform application for municipal services",
+    longDescription: "Cross-platform mobile application providing public services, news, and incident reporting for Kotabaru. Developed in partnership with Rakha using React Native.",
+    stack: ["TypeScript", "React Native", "Expo Router", "TailwindCSS", "Node.js"],
+    stars: 0,
+    updated: "2026-06-16",
+    github: "https://github.com/santanamnaa/siring-saijaan",
+    demo: "https://play.google.com/store/apps/details?id=com.siringsaijaan",
+    category: "Mobile Development",
+    status: "Live",
+    preview: {
+      features: ["Cross-platform iOS & Android", "Expo Router navigation", "Incident reporting forms", "Local maps SDK integration"],
+      tech_highlights: "React Native + Expo Router"
+    }
+  },
+  {
+    id: "finchat",
+    title: "Finchat — Financial Analytics Platform",
+    description: "Financial chat interface and interactive dashboard",
+    longDescription: "Chat-centric financial helper platform that ingests fiscal reports and lets users interactively query data, generating real-time analytics graphs.",
+    stack: ["TypeScript", "React", "Next.js", "TailwindCSS", "Recharts"],
+    stars: 0,
+    updated: "2026-04-22",
+    github: "https://github.com/gentaArnezzi/finchat",
+    demo: "https://finchat-web.vercel.app",
+    category: "Web Development",
+    status: "Live",
+    preview: {
+      features: ["Interactive chat sidebar", "Dynamic chart renders via Recharts", "Clean UI layout", "Fiscal document query parsing"],
+      tech_highlights: "Next.js + Recharts + Tailwind"
+    }
+  },
+  {
+    id: "S.O.T.A.M",
+    title: "S.O.T.A.M — Analytics Dashboard",
+    description: "TSP Digital's internal analytics dashboard",
+    longDescription: "Real-time task orchestration, team metrics, and server monitoring dashboard deployed for TSP Digital's operations.",
+    stack: ["TypeScript", "React", "Next.js", "TailwindCSS", "Express", "PostgreSQL"],
+    stars: 0,
+    updated: "2026-03-03",
+    github: "https://github.com/santanamnaa/S.O.T.A.M",
+    demo: "https://s-o-t-a-m.vercel.app",
+    category: "Web Development",
+    status: "Production",
+    preview: {
+      features: ["Server load tracking", "Real-time task orchestration board", "Express backend telemetry", "PostgreSQL persistence"],
+      tech_highlights: "Next.js + Express + PostgreSQL"
+    }
+  },
+  {
+    id: "kustoomkaret",
+    title: "Kustoom Karet — E-Commerce",
+    description: "Custom rubber manufacturer landing page and catalog",
+    longDescription: "Product catalog and quoting system for custom rubber parts built to serve local Indonesian factories.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "EmailJS"],
+    stars: 0,
+    updated: "2026-02-07",
+    github: "https://github.com/santanamnaa/kustoomkaret",
+    demo: "https://kustoomkaret.vercel.app",
+    category: "Web Development",
+    status: "Live",
+    preview: {
+      features: ["Product catalog categories", "Quoting form via EmailJS", "Factory showcase profiles", "Responsive mobile sizing"],
+      tech_highlights: "Next.js + EmailJS Integration"
+    }
+  },
+  {
+    id: "Travel-Insight-Dashboard",
+    title: "Travel Insight Dashboard",
+    description: "Analytical dashboard showcasing travel trends",
+    longDescription: "Interactive web analytics dashboard parsing regional travel volumes, booking methods, and seasonal trends.",
+    stack: ["TypeScript", "React", "Recharts", "TailwindCSS"],
+    stars: 0,
+    updated: "2026-04-10",
+    github: "https://github.com/santanamnaa/Travel-Insight-Dashboard",
+    demo: "https://replit.com/@santanamnaadev/Travel-Insight-Dashboard",
+    category: "Data Science",
+    status: "Completed",
+    preview: {
+      features: ["Dynamic charts via Recharts", "Travel volume data tables", "Interactive filter dropdowns", "TailwindCSS design themes"],
+      tech_highlights: "React + Recharts on Replit"
+    }
+  },
+  {
+    id: "Gastro-Smart",
+    title: "Gastro-Smart — Healthcare App",
+    description: "Symptom evaluator and digestive wellness assistant",
+    longDescription: "Healthcare tracking app detailing dietary triggers, symptoms log, and giving wellness suggestions.",
+    stack: ["TypeScript", "React", "Tailwind CSS", "Replit"],
+    stars: 0,
+    updated: "2026-05-07",
+    github: "https://github.com/santanamnaa/Gastro-Smart",
+    demo: "https://replit.com/@santanamnaadev/Gastro-Smart",
+    category: "Mobile Development",
+    status: "Prototype",
+    preview: {
+      features: ["Interactive diet logs", "Symptom tracking checksheets", "Digestive health advice grids"],
+      tech_highlights: "React + Replit Mockups"
+    }
+  },
+  {
+    id: "StudentBuddyTracker",
+    title: "Student Buddy Tracker",
+    description: "Study groups and task companion dashboard",
+    longDescription: "A collaboration tool allowing class peers to organize study groups, coordinate assignments, and share study materials.",
+    stack: ["JavaScript", "HTML", "CSS", "Replit"],
+    stars: 0,
+    updated: "2025-05-08",
+    github: "https://github.com/santanamnaa/StudentBuddyTracker",
+    demo: "https://replit.com/@santanamnaadev/StudentBuddyTracker",
+    category: "Web Development",
+    status: "Completed",
+    preview: {
+      features: ["Study group forums", "Assignment schedules checklist", "Peer file-sharing links"],
+      tech_highlights: "Pure Vanilla Frontend"
+    }
+  },
+  {
+    id: "easetask",
+    title: "EasyTask — Task API",
+    description: "Task management REST API with JWT security",
+    longDescription: "Backend service offering JWT auth, task creation and update endpoints, database records, and query abstraction.",
+    stack: ["Node.js", "Express", "MongoDB", "JWT"],
+    stars: 0,
+    updated: "2024-12-16",
+    github: "https://github.com/santanamnaa/easetask",
+    demo: null,
+    category: "Backend",
+    status: "Completed",
+    preview: {
+      features: ["JWT authentication logic", "MongoDB collections setup", "RESTful API routes schema"],
+      tech_highlights: "Node.js + MongoDB"
+    }
+  },
+  {
+    id: "backendHidear",
+    title: "Hidear — API Backend",
+    description: "API coordination backend for Hidear application",
+    longDescription: "Backend application built with Node.js and Express to orchestrate database operations and RESTful APIs.",
+    stack: ["JavaScript", "Node.js", "Express", "MongoDB"],
+    stars: 0,
+    updated: "2025-03-05",
+    github: "https://github.com/santanamnaa/backendHidear",
+    demo: null,
+    category: "Backend",
+    status: "Completed",
+    preview: {
+      features: ["Express middleware chains", "NoSQL collection queries", "Auth verification routes"],
+      tech_highlights: "NodeJS + Express + Mongo"
+    }
+  },
+  {
+    id: "drawntexturedyarn",
+    title: "Drawn Textured Yarn — Tracker",
+    description: "Yarn production tracking and scheduling database mock",
+    longDescription: "Mock factory logging application tracking batch production stages, scheduling status, and shipment dates.",
+    stack: ["TypeScript", "React", "Tailwind CSS", "Vercel"],
+    stars: 0,
+    updated: "2026-05-21",
+    github: "https://github.com/santanamnaa/drawntexturedyarn",
+    demo: null,
+    category: "Web Development",
+    status: "Prototype",
+    preview: {
+      features: ["Factory inventory mock data", "Dynamic status boards", "Fast search filters"],
+      tech_highlights: "React + Tailwind + Vercel"
+    }
+  },
+  {
+    id: "jaratara3",
+    title: "Jaratara 3 — Organizer",
+    description: "Travel coordinator dashboard and regional map routing",
+    longDescription: "Travel dashboard showing coordinate routing, hotel locations, custom itinerary builders, and weather alerts.",
+    stack: ["TypeScript", "Next.js", "TailwindCSS", "Mapbox SDK"],
+    stars: 0,
+    updated: "2026-07-09",
+    github: "https://github.com/santanamnaa/jaratara3",
+    demo: null,
+    category: "Web Development",
+    status: "Prototype",
+    preview: {
+      features: ["Mapbox routing coordination", "Weather forecast components", "Itinerary planning layouts"],
+      tech_highlights: "Next.js + Mapbox API"
+    }
   }
 ];
 

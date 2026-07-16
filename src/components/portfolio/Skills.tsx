@@ -14,27 +14,27 @@ const skillCategories: SkillCategory[] = [
   {
     icon: Code,
     title: "Languages",
-    skills: ["Python", "JavaScript/TypeScript", "Java", "PHP", "Dart", "C/C++"]
+    skills: ["Python", "JavaScript/TypeScript", "Java", "PHP", "Dart", "C/C++", "SQL"]
   },
   {
     icon: Wrench,
     title: "Frameworks",
-    skills: ["FastAPI", "Django", "Next.js 14", "Flutter", "Node.js/Express", "OpenCV"]
+    skills: ["React/Next.js", "Vue.js/Nuxt 3", "Flutter", "React Native", "FastAPI", "Node.js/Express", "OpenCV"]
   },
   {
     icon: Brain,
     title: "AI/ML",
-    skills: ["RAG Systems", "Model Development", "Embeddings", "scikit-learn", "Data Analysis"]
+    skills: ["RAG Systems", "LangGraph", "Ollama", "DeepSeek", "Model Development", "scikit-learn", "TensorFlow"]
   },
   {
     icon: Database,
     title: "Databases",
-    skills: ["TiDB Cloud (VECTOR)", "PostgreSQL", "Firebase", "Supabase", "MySQL"]
+    skills: ["TiDB Cloud (Vector)", "PostgreSQL", "MongoDB", "MySQL", "Redis", "Firebase", "Supabase"]
   },
   {
     icon: Cloud,
     title: "Cloud & Tools",
-    skills: ["RESTful APIs", "Git/GitHub", "Docker", "Vercel", "AWS (basic)"]
+    skills: ["RESTful APIs", "Docker/Docker Compose", "GitHub Actions", "Vercel", "AWS (EC2/S3)", "Git/GitHub"]
   },
   {
     icon: Users,
@@ -118,9 +118,9 @@ export const Skills = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
                 {[
                   { number: "6+", label: "Categories" },
-                  { number: "25+", label: "Technologies" },
+                  { number: "35+", label: "Technologies" },
                   { number: "3+", label: "Years Experience" },
-                  { number: "85%", label: "Average Proficiency" }
+                  { number: "90%", label: "Average Proficiency" }
                 ].map((stat, index) => (
                   <motion.div
                     key={index}

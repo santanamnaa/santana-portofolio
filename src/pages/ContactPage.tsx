@@ -69,7 +69,7 @@ const socialLinks = [
     label: "GitHub",
     value: "github.com/santanamnaa",
     href: "https://github.com/santanamnaa",
-    description: "24+ repositories"
+    description: "120+ repositories"
   },
   {
     icon: Linkedin,
