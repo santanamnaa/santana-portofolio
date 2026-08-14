@@ -10,10 +10,20 @@ export default function Home() {
       <main suppressHydrationWarning>
         <Hero />
 
+        {/* saugi.me Template Styled Minimalist About Section with Profile Photo */}
         <section id="about" className="py-12 px-4 border-t border-slate-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-900">
           <div className="container mx-auto max-w-[65ch]">
             <div className="prose dark:prose-invert max-w-none text-base leading-relaxed text-slate-700 dark:text-gray-300 space-y-5">
               
+              {/* Profile Photo */}
+              <div className="flex justify-center mb-6">
+                <img
+                  src="/images/pas_foto.jpg"
+                  alt="Santana Mena"
+                  className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover border-2 border-slate-200 dark:border-zinc-700 shadow-sm"
+                />
+              </div>
+
               <h1 className="text-center text-3xl font-bold text-slate-900 dark:text-white font-heading mb-6">
                 Santana Mena
               </h1>
