@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { GitHubContributions } from "@/components/GitHubContributions";
 
 export default function Home() {
   return (
@@ -39,6 +40,9 @@ export default function Home() {
               <p>
                 Feel free to check out my <Link href="/projects" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">projects</Link> or view my <Link href="/achievements" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">achievements</Link>.
               </p>
+
+              {/* Live GitHub Green Contribution Calendar Component */}
+              <GitHubContributions />
 
               <hr className="w-24 mx-auto border-t border-slate-200 dark:border-zinc-700 my-8" />
 
