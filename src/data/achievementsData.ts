@@ -53,7 +53,7 @@ Disitasi dalam artikel riset berjudul "Pengembangan Aplikasi Mobile Berbasis Flu
     icon: "gold",
     organization: "BINUS University Bandung",
     year: "2024",
-    description: `Menerima penghargaan Outstanding Student Award dari BINUS University atas prestasi akademis (GPA: 3.48/4.00) dan kontribusi non-akademis.
+    description: `Menerima penghargaan Outstanding Student Award dari BINUS University atas prestasi akademis dan kontribusi non-akademis.
 Diundang sebagai Pembicara dalam German Workshop pada BINUS Festival (BIFEST) 2024 membawakan materi kompetensi global dan peluang karir.`,
     link: "https://binus.ac.id/bandung/2024/12/ratusan-binusian-hadiri-german-workshop-membuka-peluang-global-melalui-bahasa/"
   },
