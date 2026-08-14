@@ -12,6 +12,194 @@ export interface ProjectItem {
 
 export const projectsData: ProjectItem[] = [
   {
+    "id": "movaads-iot",
+    "title": "PT Lumina Media Digital (MovaAds)",
+    "description": "AIoT real-time edge computer vision advertising telemetry system with live GPS integration.",
+    "demo_url": "https://movaads.com/",
+    "technologies": [
+      "Python",
+      "OpenCV",
+      "YOLOv8",
+      "OpenVINO",
+      "WebSockets"
+    ],
+    "opensource": false,
+    "category": "Data & Cloud",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "siring-saijaan",
+    "title": "Siring Saijaan (Kotabaru Attorney & Govt)",
+    "description": "Secure cross-platform public service and civic messaging mobile app featuring encrypted local storage.",
+    "demo_url": "https://play.google.com/store/apps/details?id=com.siringsaijaan",
+    "technologies": [
+      "React Native",
+      "Expo Router",
+      "TypeScript",
+      "Firebase",
+      "Sentry"
+    ],
+    "opensource": false,
+    "category": "Mobile App",
+    "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "jaratara",
+    "title": "Jaratara Gastronomy Tourism Portal",
+    "description": "Scalable gastronomy tourism portal handling high-traffic content delivery and regional culinary discovery.",
+    "demo_url": "https://jaratara.com/",
+    "technologies": [
+      "TypeScript",
+      "React 19",
+      "Node.js",
+      "PostgreSQL"
+    ],
+    "opensource": false,
+    "category": "Web Development",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "golkarjabar",
+    "title": "golkarjabar.id Regional Information Portal",
+    "description": "Official regional information platform handling high-traffic content delivery and public media publishing.",
+    "demo_url": "https://golkarjabar.id/",
+    "technologies": [
+      "TypeScript",
+      "React 19",
+      "Nuxt 3",
+      "Node.js",
+      "PostgreSQL"
+    ],
+    "opensource": false,
+    "category": "Web Development",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "sekolah-pgri",
+    "title": "SMAS PGRI Larantuka Portal",
+    "description": "Official institutional web platform featuring student enrollment, academic reporting, and announcements.",
+    "demo_url": "https://www.smaspgrilarantuka.sch.id/",
+    "technologies": [
+      "TypeScript",
+      "Next.js",
+      "TailwindCSS",
+      "MySQL"
+    ],
+    "opensource": false,
+    "category": "Web Development",
+    "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "mylinx",
+    "title": "MyLinx No-Code MSME Platform",
+    "description": "Indonesian MSME website builder featuring direct WhatsApp ordering and QRIS payment integration. ICISS 2026 published paper.",
+    "demo_url": "https://mylinx.tech/",
+    "technologies": [
+      "Laravel",
+      "PHP",
+      "Blade",
+      "MySQL"
+    ],
+    "opensource": true,
+    "category": "Web Development",
+    "image": "https://images.unsplash.com/photo-1556742049-0a67568d0d9f?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "aitiserve",
+    "title": "PT Aitiserve Djaya Naraya Corporate Portal",
+    "description": "Official corporate web platform and institutional portal delivering high-performance responsive web experience.",
+    "demo_url": "https://aitiserve.co.id/",
+    "technologies": [
+      "TypeScript",
+      "Next.js",
+      "Node.js",
+      "PostgreSQL"
+    ],
+    "opensource": false,
+    "category": "Web Development",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "tspdigital",
+    "title": "TSP Digital IT Consulting Agency",
+    "description": "Official IT consulting platform delivering custom enterprise software solutions and cloud architecture.",
+    "demo_url": "https://tspdigital.id/",
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Node.js"
+    ],
+    "opensource": false,
+    "category": "Web Development",
+    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "sumabarber",
+    "title": "Suma Barber Commercial Platform",
+    "description": "Commercial barber platform managing store locations, customer appointments, and service catalogs.",
+    "demo_url": "https://sumabarber.my.id/",
+    "technologies": [
+      "TypeScript",
+      "Next.js",
+      "TailwindCSS",
+      "PostgreSQL"
+    ],
+    "opensource": false,
+    "category": "Web Development",
+    "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "tamankehati",
+    "title": "Pangkalan Data Taman Kehati (Ministry of Environment RI)",
+    "description": "National environmental database managing biodiversity records for the Ministry of Environment RI (KLH RI).",
+    "demo_url": "https://tamankehati.klh.go.id/",
+    "technologies": [
+      "TypeScript",
+      "Next.js",
+      "FastAPI",
+      "PostgreSQL",
+      "Redis"
+    ],
+    "opensource": true,
+    "category": "Data & Cloud",
+    "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "vectorrag",
+    "title": "VectorRAG Production GenAI Assistant",
+    "description": "Enterprise RAG assistant utilizing TiDB Cloud Vector search and deep learning sentence embeddings with MLOps telemetry.",
+    "demo_url": "https://github.com/santanamnaa/rag-agent-tidb",
+    "github_url": "https://github.com/santanamnaa/rag-agent-tidb",
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "TiDB Cloud Vector",
+      "Ollama",
+      "Docker"
+    ],
+    "opensource": true,
+    "category": "AI & Machine Learning",
+    "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "simjang",
+    "title": "Simjang AI Health Diagnostics",
+    "description": "Clinical risk predictive model for cardiovascular disease forecasting with accelerated C++ & Cython algorithms.",
+    "demo_url": "https://simjang.streamlit.app/",
+    "github_url": "https://github.com/santanamnaa/predict_heart_disease",
+    "technologies": [
+      "Python",
+      "C++",
+      "Cython",
+      "scikit-learn",
+      "Streamlit"
+    ],
+    "opensource": true,
+    "category": "AI & Machine Learning",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
     "id": "lawapp-onboarding",
     "title": "Law App Client Onboarding",
     "description": "Legal client onboarding and case document management web platform with secure authentication workflows.",
@@ -32,7 +220,7 @@ export const projectsData: ProjectItem[] = [
     "title": "Electronic Delivery Order System",
     "description": "Enterprise Electronic Delivery Order (e-DO) logistics management system for shipping line document processing.",
     "github_url": "",
-    "demo_url": "https://aitiserve.co.id",
+    "demo_url": "https://aitiserve.co.id/",
     "technologies": [
       "Python",
       "FastAPI",
@@ -61,22 +249,6 @@ export const projectsData: ProjectItem[] = [
     "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": "movaads-iot",
-    "title": "MovaAds IoT Mobility Platform",
-    "description": "Real-time IoT mobility advertising telemetry platform tracking display screens and location analytics.",
-    "github_url": "",
-    "demo_url": "https://hitalokamanava.vercel.app",
-    "technologies": [
-      "Python",
-      "FastAPI",
-      "IoT Telemetry",
-      "PostgreSQL"
-    ],
-    "opensource": false,
-    "category": "Data & Cloud",
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
-  },
-  {
     "id": "onvlo-platform",
     "title": "Onvlo Digital Platform",
     "description": "Enterprise web platform for digital service coordination and client request tracking.",
@@ -97,7 +269,7 @@ export const projectsData: ProjectItem[] = [
     "title": "Admovee Outdoor Advertising",
     "description": "Outdoor advertising management platform managing billboard inventory, booking schedules, and client contracts.",
     "github_url": "",
-    "demo_url": "https://aitiserve.co.id",
+    "demo_url": "https://aitiserve.co.id/",
     "technologies": [
       "Python",
       "FastAPI",
@@ -123,22 +295,6 @@ export const projectsData: ProjectItem[] = [
     "opensource": false,
     "category": "Mobile App",
     "image": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    "id": "sekolah-pgri",
-    "title": "Sekolah PGRI Portal",
-    "description": "School management portal featuring student enrollment, academic reporting, and announcements.",
-    "github_url": "",
-    "demo_url": "https://sekolah-pgri.vercel.app",
-    "technologies": [
-      "TypeScript",
-      "Next.js",
-      "TailwindCSS",
-      "MySQL"
-    ],
-    "opensource": false,
-    "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "mrket-id",
@@ -206,23 +362,6 @@ export const projectsData: ProjectItem[] = [
     "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": "tspdigital",
-    "title": "TSP Digital Agency",
-    "description": "Official agency platform built with React/Next.js and interactive 3D particle animations using Three.js.",
-    "github_url": "https://github.com/santanamnaa/tspdigital",
-    "demo_url": "https://tspdigital.id",
-    "technologies": [
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Three.js",
-      "TailwindCSS"
-    ],
-    "opensource": true,
-    "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80"
-  },
-  {
     "id": "finchat",
     "title": "FinChat Analytics",
     "description": "Financial chat interface and analytics platform with real-time streaming components.",
@@ -239,31 +378,11 @@ export const projectsData: ProjectItem[] = [
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": "tamankehati",
-    "title": "Pangkalan Data Taman Kehati",
-    "description": "Full-stack environmental tracking database system for Ministry of Environment with automated testing suites (Jest, Playwright) and Redis caching.",
-    "github_url": "https://github.com/gentaArnezzi/tamankehati",
-    "demo_url": "https://tamankehati-8x6q.vercel.app",
-    "technologies": [
-      "TypeScript",
-      "Next.js",
-      "FastAPI",
-      "PostgreSQL",
-      "Redis",
-      "Docker",
-      "Jest",
-      "Playwright"
-    ],
-    "opensource": true,
-    "category": "Data & Cloud",
-    "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80"
-  },
-  {
     "id": "glycora",
     "title": "Glycora Health",
     "description": "Smart diabetes prediction application assessing risk using personal health data for early prevention. 𐤿",
     "github_url": "https://github.com/santanamnaa/Glycora",
-    "demo_url": "",
+    "demo_url": "https://github.com/santanamnaa/Glycora",
     "technologies": [
       "Python",
       "Jupyter Notebook",
@@ -273,22 +392,6 @@ export const projectsData: ProjectItem[] = [
     "opensource": true,
     "category": "AI & Machine Learning",
     "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    "id": "simjang",
-    "title": "Simjang Heart Risk",
-    "description": "Simjang is a heart disease prediction app built with Streamlit and scikit-learn machine learning classifiers. ️",
-    "github_url": "https://github.com/santanamnaa/simjang",
-    "demo_url": "https://simjang.streamlit.app",
-    "technologies": [
-      "Python",
-      "Streamlit",
-      "Scikit-Learn",
-      "Jupyter"
-    ],
-    "opensource": true,
-    "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "basic-todolist",
@@ -339,24 +442,6 @@ export const projectsData: ProjectItem[] = [
     "opensource": true,
     "category": "AI & Machine Learning",
     "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    "id": "mylinx",
-    "title": "MyLinx UMKM Platform",
-    "description": "No-code digitalization platform for Indonesian MSMEs (UMKMs) presented at ICISS 2026 conference (SUS score 85.0).",
-    "github_url": "https://github.com/raexera/MyLinx",
-    "demo_url": "https://mylinx.tech",
-    "technologies": [
-      "Blade (Laravel/PHP)",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "MySQL",
-      "QRIS API"
-    ],
-    "opensource": true,
-    "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "ai-skill-gap-analyst",
