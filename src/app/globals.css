@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italianno&family=Pinyon+Script&family=Bodoni+Moda:ital,opsz,wght@1,6..96,900&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+.dark {
+  --background: #020617;
+  --foreground: #f8fafc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', var(--font-geist-sans), sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-swash {
+  font-family: 'Pinyon Script', 'Great Vibes', 'Italianno', cursive, serif;
+}
+
+.font-art-serif {
+  font-family: 'Bodoni Moda', serif;
+}
+
+.font-heading-sans {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom Utilities for Awwwards Aesthetic */
+.blue-gradient-text {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-card-glow {
+  box-shadow: 0 4px 20px -2px rgba(37, 99, 235, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.blue-card-glow:hover {
+  box-shadow: 0 12px 30px -4px rgba(37, 99, 235, 0.16), 0 4px 12px -2px rgba(0, 0, 0, 0.06);
+  transform: translateY(-3px);
+}
