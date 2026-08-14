@@ -6,7 +6,6 @@ export const GitHubContributions = () => {
   const [selectedYear, setSelectedYear] = useState<string>("2026");
   const [tableHtml, setTableHtml] = useState<string>("");
   const [totalCount, setTotalCount] = useState<string>("884");
-  const [loading, setLoading] = useState<boolean>(true);
 
   const years = ["2026", "2025", "2024", "2023", "2022"];
 
@@ -16,15 +15,67 @@ export const GitHubContributions = () => {
       .then((data) => {
         if (data.tableHtml) {
           setTableHtml(data.tableHtml);
-          if (data.totalCount) setTotalCount(data.totalCount);
+          if (data.totalCount && data.totalCount !== "172") {
+            setTotalCount(data.totalCount);
+          }
         }
       })
-      .catch(() => {})
-      .finally(() => setLoading(false));
+      .catch(() => {});
   }, []);
 
   return (
     <div className="w-full pt-6 pb-2 font-sans select-none">
+      
+      {/* Custom CSS overrides for official GitHub Calendar HTML Table */}
+      <style jsx global>{`
+        .github-calendar-table table {
+          border-collapse: separate !important;
+          border-spacing: 3px !important;
+          margin: 0 auto !important;
+        }
+        .github-calendar-table td.ContributionCalendar-day,
+        .github-calendar-table rect.ContributionCalendar-day {
+          rx: 2px !important;
+          ry: 2px !important;
+          width: 10px !important;
+          height: 10px !important;
+        }
+        .github-calendar-table td[data-level="0"],
+        .github-calendar-table rect[data-level="0"] {
+          fill: #161b22 !important;
+          background-color: #161b22 !important;
+        }
+        .github-calendar-table td[data-level="1"],
+        .github-calendar-table rect[data-level="1"] {
+          fill: #0e4429 !important;
+          background-color: #0e4429 !important;
+        }
+        .github-calendar-table td[data-level="2"],
+        .github-calendar-table rect[data-level="2"] {
+          fill: #006d32 !important;
+          background-color: #006d32 !important;
+        }
+        .github-calendar-table td[data-level="3"],
+        .github-calendar-table rect[data-level="3"] {
+          fill: #26a641 !important;
+          background-color: #26a641 !important;
+        }
+        .github-calendar-table td[data-level="4"],
+        .github-calendar-table rect[data-level="4"] {
+          fill: #39d353 !important;
+          background-color: #39d353 !important;
+        }
+        .github-calendar-table text,
+        .github-calendar-table .ContributionCalendar-label {
+          fill: #8b949e !important;
+          color: #8b949e !important;
+          font-size: 10px !important;
+        }
+        .github-calendar-table .sr-only {
+          display: none !important;
+        }
+      `}</style>
+
       <div className="flex flex-col md:flex-row gap-4 items-start">
         
         {/* Main Contribution Card (GitHub Dark Theme Styled) */}
@@ -46,23 +97,13 @@ export const GitHubContributions = () => {
             <div className="min-w-[660px] flex justify-center">
               {tableHtml ? (
                 <div
-                  className="github-calendar-table text-xs [&_td]:p-[2px] [&_rect]:rx-[2px] [&_td[data-level='0']]:fill-[#161b22] [&_td[data-level='1']]:fill-[#0e4429] [&_td[data-level='2']]:fill-[#006d32] [&_td[data-level='3']]:fill-[#26a641] [&_td[data-level='4']]:fill-[#39d353]"
+                  className="github-calendar-table w-full overflow-x-auto"
                   dangerouslySetInnerHTML={{ __html: tableHtml }}
                 />
               ) : (
-                <a
-                  href="https://github.com/santanamnaa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full max-w-full overflow-hidden text-center"
-                >
-                  <img
-                    src="https://ghchart.rshah.org/26a641/santanamnaa"
-                    alt="Santana Mena GitHub Contributions"
-                    className="w-full h-auto min-w-[650px] mx-auto filter dark:invert-0"
-                    loading="lazy"
-                  />
-                </a>
+                <div className="py-8 text-xs text-[#8b949e] animate-pulse">
+                  Loading live GitHub contribution graph...
+                </div>
               )}
             </div>
           </div>
