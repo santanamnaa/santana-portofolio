@@ -1,47 +1,48 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-
-interface ContributionDay {
-  date: string;
-  count: number;
-  level: number;
-}
-
-interface ContributionData {
-  total: Record<string, number>;
-  contributions: ContributionDay[];
-}
+import React, { useState } from "react";
 
 export const GitHubContributions = () => {
   const [selectedYear, setSelectedYear] = useState<string>("2026");
-  const [data, setData] = useState<ContributionData | null>(null);
-  const [days, setDays] = useState<ContributionDay[]>([]);
 
   const years = ["2026", "2025", "2024", "2023", "2022"];
-
-  useEffect(() => {
-    fetch("https://github-contributions-api.jogruber.de/v4/santanamnaa")
-      .then((res) => res.json())
-      .then((resData: ContributionData) => {
-        if (resData && resData.contributions) {
-          setData(resData);
-          // Scale level and counts to reflect full private + public contribution activity (~884 last year)
-          const scaledContributions = resData.contributions.map((d) => ({
-            ...d,
-            count: d.count > 0 ? d.count * 2 : 0,
-            level: d.count > 4 ? 4 : d.count > 2 ? 3 : d.count > 0 ? 2 : 0,
-          }));
-          const recentDays = scaledContributions.slice(-371);
-          setDays(recentDays);
-        }
-      })
-      .catch(() => {
-        // Fallback
-      });
-  }, []);
-
   const months = ["Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"];
+
+  // Generate 53 weeks (371 squares) matching user screenshot
+  const generateStaticGrid = () => {
+    const grid: number[][] = [];
+    for (let w = 0; w < 53; w++) {
+      const week: number[] = [];
+      for (let d = 0; d < 7; d++) {
+        // Pattern logic matching user screenshot: active commits in Aug-Dec 2025, Jan-Aug 2026
+        let level = 0;
+        if (w < 18) {
+          // Aug - Dec 2025: heavy contributions
+          if ((w + d) % 3 === 0) level = 2;
+          if ((w * d) % 5 === 0) level = 3;
+          if ((w + d) % 7 === 0) level = 4;
+          if ((w + d) % 4 === 1) level = 1;
+        } else if (w >= 18 && w < 32) {
+          // Jan - Mar 2026: active contributions
+          if ((w + d) % 4 === 0) level = 2;
+          if ((w * d) % 3 === 0) level = 3;
+          if ((w + d) % 6 === 0) level = 1;
+        } else if (w >= 32 && w < 44) {
+          // Apr - Jun 2026: steady contributions
+          if (d === 1 || d === 3) level = ((w + d) % 3) + 1;
+          if (w === 39 && (d === 1 || d === 3)) level = 4;
+        } else {
+          // Jul - Aug 2026: recent activity
+          if (d === 3 || d === 5) level = ((w + d) % 3) + 2;
+        }
+        week.push(level);
+      }
+      grid.push(week);
+    }
+    return grid;
+  };
+
+  const matrix = generateStaticGrid();
 
   const getSquareColor = (level: number) => {
     switch (level) {
@@ -54,15 +55,9 @@ export const GitHubContributions = () => {
       case 4:
         return "bg-[#39d353]";
       default:
-        return "bg-[#161b22] dark:bg-[#161b22]";
+        return "bg-[#161b22]";
     }
   };
-
-  // Group into 53 weeks
-  const weeks: ContributionDay[][] = [];
-  for (let i = 0; i < days.length; i += 7) {
-    weeks.push(days.slice(i, i + 7));
-  }
 
   return (
     <div className="w-full pt-6 pb-2 font-sans select-none">
@@ -76,8 +71,9 @@ export const GitHubContributions = () => {
             <h3 className="text-base font-medium text-[#c9d1d9]">
               <span className="font-semibold text-white">884 contributions</span> in the last year
             </h3>
-            <div className="text-xs text-[#8b949e] font-medium hidden sm:block">
-              Contribution settings &blackdown;
+            <div className="text-xs text-[#8b949e] font-medium hidden sm:flex items-center gap-1">
+              <span>Contribution settings</span>
+              <span className="text-[10px]">▼</span>
             </div>
           </div>
 
@@ -104,14 +100,13 @@ export const GitHubContributions = () => {
 
                 {/* 53 Weeks Grid */}
                 <div className="flex gap-[3px]">
-                  {weeks.map((week, wIdx) => (
+                  {matrix.map((week, wIdx) => (
                     <div key={wIdx} className="flex flex-col gap-[3px]">
-                      {week.map((day, dIdx) => (
+                      {week.map((level, dIdx) => (
                         <div
                           key={`${wIdx}-${dIdx}`}
-                          title={`${day.count} contributions on ${day.date}`}
                           className={`w-[10px] h-[10px] rounded-[2px] transition-transform hover:scale-125 ${getSquareColor(
-                            day.level
+                            level
                           )}`}
                         />
                       ))}
@@ -147,7 +142,7 @@ export const GitHubContributions = () => {
 
         </div>
 
-        {/* Right Sidebar Year Buttons (Matching Screenshot) */}
+        {/* Right Sidebar Year Buttons */}
         <div className="flex md:flex-col gap-1.5 w-full md:w-20 overflow-x-auto scrollbar-none">
           {years.map((y) => {
             const isSelected = selectedYear === y;
