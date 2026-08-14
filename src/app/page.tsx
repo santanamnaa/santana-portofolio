@@ -29,7 +29,7 @@ export default function Home() {
               </h1>
 
               <p>
-                Hi, I am <strong>Santana Mena</strong>, a Software Developer, AI Engineer, and Business Analyst based in Indonesia. Currently studying Computer Science at <strong>BINUS University</strong>.
+                Hi, I am <strong>Santana Mena</strong>, a Software Developer, AI Engineer, and Business Analyst based in Indonesia. Currently studying Computer Science with a Minor in Data Science at <strong>BINUS University</strong>.
               </p>
 
               <p>

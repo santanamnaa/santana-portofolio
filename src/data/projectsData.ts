@@ -169,7 +169,6 @@ export const projectsData: ProjectItem[] = [
     "id": "vectorrag",
     "title": "VectorRAG Production GenAI Assistant",
     "description": "Enterprise RAG assistant utilizing TiDB Cloud Vector search and deep learning sentence embeddings with MLOps telemetry.",
-    "demo_url": "https://github.com/santanamnaa/rag-agent-tidb",
     "github_url": "https://github.com/santanamnaa/rag-agent-tidb",
     "technologies": [
       "Python",
@@ -204,7 +203,6 @@ export const projectsData: ProjectItem[] = [
     "title": "Law App Client Onboarding",
     "description": "Legal client onboarding and case document management web platform with secure authentication workflows.",
     "github_url": "",
-    "demo_url": "https://lawapp-onboarding-v2.vercel.app",
     "technologies": [
       "TypeScript",
       "Next.js",
@@ -220,7 +218,6 @@ export const projectsData: ProjectItem[] = [
     "title": "Electronic Delivery Order System",
     "description": "Enterprise Electronic Delivery Order (e-DO) logistics management system for shipping line document processing.",
     "github_url": "",
-    "demo_url": "https://aitiserve.co.id/",
     "technologies": [
       "Python",
       "FastAPI",
@@ -236,7 +233,6 @@ export const projectsData: ProjectItem[] = [
     "title": "Master ERP Enterprise System",
     "description": "Modular enterprise resource planning system for inventory tracking, purchasing workflows, and financial analytics.",
     "github_url": "",
-    "demo_url": "https://strategive.vercel.app",
     "technologies": [
       "React",
       "TypeScript",
@@ -253,7 +249,6 @@ export const projectsData: ProjectItem[] = [
     "title": "Onvlo Digital Platform",
     "description": "Enterprise web platform for digital service coordination and client request tracking.",
     "github_url": "",
-    "demo_url": "https://tahira.vercel.app",
     "technologies": [
       "TypeScript",
       "Next.js",
@@ -269,7 +264,6 @@ export const projectsData: ProjectItem[] = [
     "title": "Admovee Outdoor Advertising",
     "description": "Outdoor advertising management platform managing billboard inventory, booking schedules, and client contracts.",
     "github_url": "",
-    "demo_url": "https://aitiserve.co.id/",
     "technologies": [
       "Python",
       "FastAPI",
@@ -285,7 +279,6 @@ export const projectsData: ProjectItem[] = [
     "title": "LaundryHub Commercial System",
     "description": "Commercial laundry franchise management and customer mobile order tracking system.",
     "github_url": "",
-    "demo_url": "https://kustoomkaret.vercel.app",
     "technologies": [
       "TypeScript",
       "React Native",
@@ -301,7 +294,6 @@ export const projectsData: ProjectItem[] = [
     "title": "MRKET.id Marketplace",
     "description": "Digital e-commerce marketplace platform built for seller storefronts and payment integrations.",
     "github_url": "",
-    "demo_url": "https://mrket-landing-page.vercel.app",
     "technologies": [
       "TypeScript",
       "Next.js",
@@ -317,7 +309,6 @@ export const projectsData: ProjectItem[] = [
     "title": "Scrumtify Agile Platform",
     "description": "Real-time agile sprint planning and task orchestration workspace for engineering teams.",
     "github_url": "",
-    "demo_url": "https://scrumtify-dashboard.vercel.app",
     "technologies": [
       "TypeScript",
       "React",
@@ -333,7 +324,6 @@ export const projectsData: ProjectItem[] = [
     "title": "SmartTraffic AI",
     "description": "AI-powered traffic light system that optimizes flow and safety through computer vision density detection and real-time path scheduling.",
     "github_url": "https://github.com/santanamnaa/SmartTraffic",
-    "demo_url": "https://smarttraffic.vercel.app",
     "technologies": [
       "Python",
       "OpenCV",
@@ -349,7 +339,6 @@ export const projectsData: ProjectItem[] = [
     "title": "EaseNeura",
     "description": "Flutter mobile application connecting users with mental health specialists and self-care tracking tools. Cited in Joecy Scientific Journal (2025).",
     "github_url": "https://github.com/santanamnaa/easeneura",
-    "demo_url": "https://easeneura.vercel.app",
     "technologies": [
       "Dart",
       "Flutter",
@@ -366,7 +355,6 @@ export const projectsData: ProjectItem[] = [
     "title": "FinChat Analytics",
     "description": "Financial chat interface and analytics platform with real-time streaming components.",
     "github_url": "https://github.com/gentaArnezzi/finchat",
-    "demo_url": "https://finchat-web.vercel.app",
     "technologies": [
       "TypeScript",
       "React",
@@ -382,7 +370,6 @@ export const projectsData: ProjectItem[] = [
     "title": "Glycora Health",
     "description": "Smart diabetes prediction application assessing risk using personal health data for early prevention. 𐤿",
     "github_url": "https://github.com/santanamnaa/Glycora",
-    "demo_url": "https://github.com/santanamnaa/Glycora",
     "technologies": [
       "Python",
       "Jupyter Notebook",
@@ -524,7 +511,6 @@ export const projectsData: ProjectItem[] = [
     "title": "Aiti",
     "description": "Project repository for aiti built with TypeScript.",
     "github_url": "https://github.com/santanamnaa/aiti",
-    "demo_url": "https://aiti-ashen.vercel.app",
     "technologies": [
       "TypeScript"
     ],
@@ -563,7 +549,6 @@ export const projectsData: ProjectItem[] = [
     "title": "Lawapp Onboarding V2",
     "description": "Project repository for lawapp_onboarding_v2 built with TypeScript.",
     "github_url": "https://github.com/santanamnaa/lawapp_onboarding_v2",
-    "demo_url": "https://lawapp-onboarding-v2.vercel.app",
     "technologies": [
       "TypeScript"
     ],
@@ -589,7 +574,6 @@ export const projectsData: ProjectItem[] = [
     "title": "Pizza Promotion App",
     "description": "Project repository for pizza-promotion built with TypeScript.",
     "github_url": "https://github.com/santanamnaa/pizza-promotion",
-    "demo_url": "https://pizza-promotion.vercel.app",
     "technologies": [
       "TypeScript"
     ],
@@ -628,7 +612,6 @@ export const projectsData: ProjectItem[] = [
     "title": "Strategive Web App",
     "description": "Project repository for strategive built with TypeScript.",
     "github_url": "https://github.com/santanamnaa/strategive",
-    "demo_url": "https://strategive.vercel.app",
     "technologies": [
       "TypeScript"
     ],
@@ -641,7 +624,6 @@ export const projectsData: ProjectItem[] = [
     "title": "Kodera Platform",
     "description": "Project repository for kodera built with TypeScript.",
     "github_url": "https://github.com/santanamnaa/kodera",
-    "demo_url": "https://kodera-id-santana-menas-projects.vercel.app",
     "technologies": [
       "TypeScript"
     ],
@@ -732,7 +714,6 @@ export const projectsData: ProjectItem[] = [
     "title": "Internet Computer Code Samples",
     "description": "Example applications, microservices, and code samples for the Internet Computer",
     "github_url": "https://github.com/santanamnaa/examples",
-    "demo_url": "https://dfinity.org",
     "technologies": [
       "TypeScript"
     ],
@@ -745,7 +726,6 @@ export const projectsData: ProjectItem[] = [
     "title": "Tsplane",
     "description": "Jira, Linear, Monday, and ClickUp alternative. TSPlane is a fork from Pla...",
     "github_url": "https://github.com/tspdigital/tsplane",
-    "demo_url": "http://plane.so",
     "technologies": [
       "TypeScript"
     ],
@@ -941,5 +921,102 @@ export const projectsData: ProjectItem[] = [
     "opensource": true,
     "category": "System & Utilities",
     "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "fifa21-player-rating-analysis",
+    "title": "FIFA 21 Player Value & Rating Predictor",
+    "description": "Data science predictive model analyzing FIFA 21 player metrics, wage distributions, and rating growth trajectories using Scikit-Learn.",
+    "github_url": "https://github.com/santanamnaa/fifa21-player-prediction",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Scikit-Learn",
+      "Matplotlib",
+      "Seaborn",
+      "Jupyter"
+    ],
+    "opensource": true,
+    "category": "AI & Machine Learning",
+    "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "invoice-extractor-ocr",
+    "title": "Invoice OCR Data Extractor & Analytics",
+    "description": "Automated document parser extracting invoice line items, dates, and amounts using computer vision OCR and tabular data structuring.",
+    "github_url": "https://github.com/santanamnaa/InvoiceExtractor",
+    "technologies": [
+      "Python",
+      "OpenCV",
+      "Tesseract OCR",
+      "Pandas",
+      "Jupyter Notebook"
+    ],
+    "opensource": true,
+    "category": "AI & Machine Learning",
+    "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "heart-disease-stat-analysis",
+    "title": "Heart Disease Risk Statistical Modeling",
+    "description": "Comprehensive clinical dataset exploratory data analysis (EDA) and logistic regression modeling for early cardiovascular risk detection.",
+    "github_url": "https://github.com/santanamnaa/predict_heart_disease",
+    "technologies": [
+      "Python",
+      "Scikit-Learn",
+      "SciPy",
+      "Statsmodels",
+      "Seaborn"
+    ],
+    "opensource": true,
+    "category": "AI & Machine Learning",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "table-qa-report-analyzer",
+    "title": "TableQA Financial Report Answering",
+    "description": "Financial report question-answering pipeline parsing complex tabular data and extracting financial KPI insights using Transformers.",
+    "github_url": "https://github.com/santanamnaa/tableqa-question-answering",
+    "technologies": [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "Pandas",
+      "HuggingFace"
+    ],
+    "opensource": true,
+    "category": "AI & Machine Learning",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "huggingface-nlp-lab",
+    "title": "HuggingFace NLP & Transformer Fine-Tuning",
+    "description": "Natural language processing laboratory exploring BERT fine-tuning, sentiment analysis, and token classification on custom Indonesian text datasets.",
+    "github_url": "https://github.com/santanamnaa/huggingface-transformers-lab",
+    "technologies": [
+      "Python",
+      "PyTorch",
+      "HuggingFace",
+      "Transformers",
+      "Datasets"
+    ],
+    "opensource": true,
+    "category": "AI & Machine Learning",
+    "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "gdsc-ds-workshop",
+    "title": "GDSC Data Science & Python Workshop",
+    "description": "Interactive data science curriculum and Jupyter notebook suite developed for GDSC covering NumPy, Pandas, Data Cleaning, and Visualization.",
+    "github_url": "https://github.com/santanamnaa/gdsc-python-data-science",
+    "technologies": [
+      "Python",
+      "Jupyter",
+      "NumPy",
+      "Pandas",
+      "Matplotlib"
+    ],
+    "opensource": true,
+    "category": "Data & Cloud",
+    "image": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80"
   }
 ];
