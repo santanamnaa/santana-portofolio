@@ -47,9 +47,9 @@ export const Card: React.FC<CardProps> = ({
             <div className="absolute inset-0 bg-slate-950/30 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none" />
           </>
         ) : (
-          <div className="w-full h-full bg-zinc-800 p-4 flex flex-col justify-between text-white">
-            <div className="text-xs font-bold uppercase tracking-wider text-slate-400">Project</div>
-            <div className="text-sm font-bold line-clamp-1">{title}</div>
+          <div className="w-full h-full bg-gradient-to-br from-slate-900 via-zinc-900 to-black p-4 flex flex-col justify-between text-white relative">
+            <div className="text-[10px] font-extrabold uppercase tracking-widest text-blue-400">System Project</div>
+            <div className="text-sm font-bold line-clamp-2 text-white">{title}</div>
           </div>
         )}
       </a>

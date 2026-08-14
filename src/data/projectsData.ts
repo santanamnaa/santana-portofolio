@@ -102,7 +102,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1556742049-0a67568d0d9f?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "aitiserve",
@@ -117,7 +117,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": false,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "tspdigital",
@@ -132,7 +132,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": false,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "sumabarber",
@@ -147,7 +147,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": false,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "tamankehati",
@@ -163,7 +163,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Data & Cloud",
-    "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "vectorrag",
@@ -180,7 +180,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "simjang",
@@ -197,7 +197,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "lawapp-onboarding",
@@ -213,7 +213,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": false,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "e-delivery-order",
@@ -229,7 +229,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": false,
     "category": "System & Utilities",
-    "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "master-erp-platform",
@@ -246,7 +246,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": false,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "onvlo-platform",
@@ -262,7 +262,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": false,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "admovee-system",
@@ -278,7 +278,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": false,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1542744094-3a3172720224?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "laundryhub",
@@ -294,7 +294,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": false,
     "category": "Mobile App",
-    "image": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "mrket-id",
@@ -310,7 +310,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": false,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1556742049-0a67568d0d9f?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "scrumtify-platform",
@@ -326,7 +326,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": false,
     "category": "System & Utilities",
-    "image": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "smarttraffic",
@@ -342,7 +342,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "easeneura",
@@ -359,7 +359,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Mobile App",
-    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "finchat",
@@ -375,7 +375,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "glycora",
@@ -391,7 +391,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "basic-todolist",
@@ -406,7 +406,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "System & Utilities",
-    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "easypick",
@@ -423,7 +423,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Mobile App",
-    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "rag-agent-tidb",
@@ -441,7 +441,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "ai-skill-gap-analyst",
@@ -457,7 +457,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "databook",
@@ -473,7 +473,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "fifa21-player-prediction",
@@ -489,7 +489,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "huggingface-transformers-lab",
@@ -504,7 +504,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "agency-nexus",
@@ -517,7 +517,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "aiti",
@@ -530,7 +530,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "mrketid",
@@ -543,7 +543,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "kehati-be-30",
@@ -556,7 +556,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "lawapponboardingv2",
@@ -569,7 +569,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "imah-purna-38",
@@ -582,7 +582,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "pizza-promotion",
@@ -595,7 +595,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1516116211223-48a12725222b?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "smart-chatbot-with-retrieval-augmented-generation",
@@ -608,7 +608,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "mlops-foundations-01",
@@ -621,7 +621,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "strategive",
@@ -634,7 +634,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "kodera",
@@ -647,7 +647,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "studentbuddytracker",
@@ -660,7 +660,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "drawio",
@@ -673,7 +673,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "predictheartdisease",
@@ -686,7 +686,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "nndeeplearning",
@@ -699,7 +699,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "data-cleansing",
@@ -712,7 +712,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Data & Cloud",
-    "image": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "identik",
@@ -725,7 +725,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "examples",
@@ -738,7 +738,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "tsplane",
@@ -751,7 +751,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "System & Utilities",
-    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "onvlotspf",
@@ -764,7 +764,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1527474305487-b87b222841cc?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "github",
@@ -777,7 +777,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "onvlos",
@@ -790,7 +790,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Web Development",
-    "image": "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "langchain-rag-agent",
@@ -805,7 +805,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "computer-vision-cnn",
@@ -820,7 +820,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "rnn-encoder-decoder",
@@ -835,7 +835,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1527474305487-b87b222841cc?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "tableqa-question-answering",
@@ -850,7 +850,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "nlp-text-summarization",
@@ -865,7 +865,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "tfidf-text-classification",
@@ -880,7 +880,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "gradio-model-ui",
@@ -895,7 +895,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "scikit-learn-ml-pipeline",
@@ -910,7 +910,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "AI & Machine Learning",
-    "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "gdsc-python-data-science",
@@ -925,7 +925,7 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "Data & Cloud",
-    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "automated-news-scraper",
@@ -940,6 +940,6 @@ export const projectsData: ProjectItem[] = [
     ],
     "opensource": true,
     "category": "System & Utilities",
-    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80"
   }
 ];
