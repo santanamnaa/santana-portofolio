@@ -9,8 +9,8 @@ export const metadata = {
 export default function ContactPage() {
   const contactLinks = [
     {
-      label: "santanamnaa@gmail.com",
-      href: "mailto:santanamnaa@gmail.com",
+      label: "santanamnaa.dev@gmail.com",
+      href: "mailto:santanamnaa.dev@gmail.com",
     },
     {
       label: "linkedin.com/in/santana-mena",

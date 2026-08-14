@@ -21,7 +21,7 @@ export const Navbar = () => {
   const socialLinks = [
     { name: "GitHub", url: "https://github.com/santanamnaa" },
     { name: "LinkedIn", url: "https://linkedin.com/in/santana-mena" },
-    { name: "Email", url: "mailto:santanamnaa@gmail.com" },
+    { name: "Email", url: "mailto:santanamnaa.dev@gmail.com" },
   ];
 
   return (
