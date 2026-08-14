@@ -16,7 +16,7 @@ export const projectsData: ProjectItem[] = [
     "title": "Law App Client Onboarding",
     "description": "Legal client onboarding and case document management web platform with secure authentication workflows.",
     "github_url": "",
-    "demo_url": "",
+    "demo_url": "https://lawapp-onboarding-v2.vercel.app",
     "technologies": [
       "TypeScript",
       "Next.js",
@@ -32,7 +32,7 @@ export const projectsData: ProjectItem[] = [
     "title": "Electronic Delivery Order System",
     "description": "Enterprise Electronic Delivery Order (e-DO) logistics management system for shipping line document processing.",
     "github_url": "",
-    "demo_url": "",
+    "demo_url": "https://aitiserve.co.id",
     "technologies": [
       "Python",
       "FastAPI",
@@ -48,7 +48,7 @@ export const projectsData: ProjectItem[] = [
     "title": "Master ERP Enterprise System",
     "description": "Modular enterprise resource planning system for inventory tracking, purchasing workflows, and financial analytics.",
     "github_url": "",
-    "demo_url": "",
+    "demo_url": "https://strategive.vercel.app",
     "technologies": [
       "React",
       "TypeScript",
@@ -65,7 +65,7 @@ export const projectsData: ProjectItem[] = [
     "title": "MovaAds IoT Mobility Platform",
     "description": "Real-time IoT mobility advertising telemetry platform tracking display screens and location analytics.",
     "github_url": "",
-    "demo_url": "",
+    "demo_url": "https://hitalokamanava.vercel.app",
     "technologies": [
       "Python",
       "FastAPI",
@@ -81,7 +81,7 @@ export const projectsData: ProjectItem[] = [
     "title": "Onvlo Digital Platform",
     "description": "Enterprise web platform for digital service coordination and client request tracking.",
     "github_url": "",
-    "demo_url": "",
+    "demo_url": "https://tahira.vercel.app",
     "technologies": [
       "TypeScript",
       "Next.js",
@@ -97,7 +97,7 @@ export const projectsData: ProjectItem[] = [
     "title": "Admovee Outdoor Advertising",
     "description": "Outdoor advertising management platform managing billboard inventory, booking schedules, and client contracts.",
     "github_url": "",
-    "demo_url": "",
+    "demo_url": "https://aitiserve.co.id",
     "technologies": [
       "Python",
       "FastAPI",
@@ -113,7 +113,7 @@ export const projectsData: ProjectItem[] = [
     "title": "LaundryHub Commercial System",
     "description": "Commercial laundry franchise management and customer mobile order tracking system.",
     "github_url": "",
-    "demo_url": "",
+    "demo_url": "https://kustoomkaret.vercel.app",
     "technologies": [
       "TypeScript",
       "React Native",
@@ -129,7 +129,7 @@ export const projectsData: ProjectItem[] = [
     "title": "Sekolah PGRI Portal",
     "description": "School management portal featuring student enrollment, academic reporting, and announcements.",
     "github_url": "",
-    "demo_url": "",
+    "demo_url": "https://sekolah-pgri.vercel.app",
     "technologies": [
       "TypeScript",
       "Next.js",
@@ -145,7 +145,7 @@ export const projectsData: ProjectItem[] = [
     "title": "MRKET.id Marketplace",
     "description": "Digital e-commerce marketplace platform built for seller storefronts and payment integrations.",
     "github_url": "",
-    "demo_url": "",
+    "demo_url": "https://mrket-landing-page.vercel.app",
     "technologies": [
       "TypeScript",
       "Next.js",
@@ -161,7 +161,7 @@ export const projectsData: ProjectItem[] = [
     "title": "Scrumtify Agile Platform",
     "description": "Real-time agile sprint planning and task orchestration workspace for engineering teams.",
     "github_url": "",
-    "demo_url": "",
+    "demo_url": "https://scrumtify-dashboard.vercel.app",
     "technologies": [
       "TypeScript",
       "React",
@@ -177,7 +177,7 @@ export const projectsData: ProjectItem[] = [
     "title": "SmartTraffic AI",
     "description": "AI-powered traffic light system that optimizes flow and safety through computer vision density detection and real-time path scheduling.",
     "github_url": "https://github.com/santanamnaa/SmartTraffic",
-    "demo_url": "",
+    "demo_url": "https://smarttraffic.vercel.app",
     "technologies": [
       "Python",
       "OpenCV",
@@ -193,7 +193,7 @@ export const projectsData: ProjectItem[] = [
     "title": "EaseNeura",
     "description": "Flutter mobile application connecting users with mental health specialists and self-care tracking tools. Cited in Joecy Scientific Journal (2025).",
     "github_url": "https://github.com/santanamnaa/easeneura",
-    "demo_url": "",
+    "demo_url": "https://easeneura.vercel.app",
     "technologies": [
       "Dart",
       "Flutter",
@@ -556,7 +556,7 @@ export const projectsData: ProjectItem[] = [
     "title": "Kodera Platform",
     "description": "Project repository for kodera built with TypeScript.",
     "github_url": "https://github.com/santanamnaa/kodera",
-    "demo_url": "https://kodera-eta.vercel.app",
+    "demo_url": "https://kodera-id-santana-menas-projects.vercel.app",
     "technologies": [
       "TypeScript"
     ],
