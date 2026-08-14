@@ -31,6 +31,15 @@ Disitasi dalam artikel riset berjudul "Pengembangan Aplikasi Mobile Berbasis Flu
     link: "https://joecy.org/index.php/joecy/article/view/411"
   },
   {
+    id: "duta-bahasa-jabar-2023",
+    title: "Finalis Duta Bahasa Jawa Barat 2023",
+    icon: "gold",
+    organization: "Balai Bahasa Provinsi Jawa Barat",
+    year: "2023",
+    description: `Terpilih sebagai Finalis Duta Bahasa Jawa Barat mewakili Kota Bandung, berkontribusi dalam pembinaan dan pengutamaan bahasa Indonesia serta pelestarian bahasa daerah.`,
+    link: "https://binus.ac.id/bandung/2023/10/pemilihan-duta-bahasa-jawa-barat-tahun-2023/"
+  },
+  {
     id: "icp-hacker-house-2024",
     title: "Finalis ICP Chain Fusion Hacker House Bali 2024",
     icon: "blue",
