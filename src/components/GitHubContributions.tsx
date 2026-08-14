@@ -6,22 +6,33 @@ export const GitHubContributions = () => {
   const [selectedYear, setSelectedYear] = useState<string>("2026");
   const [tableHtml, setTableHtml] = useState<string>("");
   const [totalCount, setTotalCount] = useState<string>("884");
+  const [loading, setLoading] = useState<boolean>(true);
 
   const years = ["2026", "2025", "2024", "2023", "2022"];
 
-  useEffect(() => {
-    fetch("/api/github-contributions")
+  const fetchContributionsForYear = (year: string) => {
+    setLoading(true);
+    fetch(`/api/github-contributions?year=${year}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.tableHtml) {
           setTableHtml(data.tableHtml);
-          if (data.totalCount && data.totalCount !== "172") {
+          if (data.totalCount) {
             setTotalCount(data.totalCount);
           }
         }
       })
-      .catch(() => {});
-  }, []);
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  };
+
+  useEffect(() => {
+    fetchContributionsForYear(selectedYear);
+  }, [selectedYear]);
+
+  const handleYearChange = (y: string) => {
+    setSelectedYear(y);
+  };
 
   return (
     <div className="w-full pt-6 pb-2 font-sans select-none">
@@ -84,7 +95,7 @@ export const GitHubContributions = () => {
           {/* Header */}
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-base font-medium text-[#c9d1d9]">
-              <span className="font-semibold text-white">{totalCount} contributions</span> in the last year
+              <span className="font-semibold text-white">{totalCount} contributions</span> in {selectedYear === "2026" ? "the last year" : selectedYear}
             </h3>
             <div className="text-xs text-[#8b949e] font-medium hidden sm:flex items-center gap-1">
               <span>Contribution settings</span>
@@ -94,15 +105,15 @@ export const GitHubContributions = () => {
 
           {/* Grid Container */}
           <div className="overflow-x-auto scrollbar-none pb-2">
-            <div className="min-w-[660px] flex justify-center">
-              {tableHtml ? (
+            <div className="min-w-[660px] flex justify-center min-h-[140px] items-center">
+              {!loading && tableHtml ? (
                 <div
-                  className="github-calendar-table w-full overflow-x-auto"
+                  className="github-calendar-table w-full overflow-x-auto transition-opacity duration-300"
                   dangerouslySetInnerHTML={{ __html: tableHtml }}
                 />
               ) : (
                 <div className="py-8 text-xs text-[#8b949e] animate-pulse">
-                  Loading live GitHub contribution graph...
+                  Loading {selectedYear} contribution graph...
                 </div>
               )}
             </div>
@@ -140,7 +151,7 @@ export const GitHubContributions = () => {
               <button
                 key={y}
                 type="button"
-                onClick={() => setSelectedYear(y)}
+                onClick={() => handleYearChange(y)}
                 className={`w-full py-1.5 px-3 rounded-lg text-xs font-semibold text-center transition-colors cursor-pointer ${
                   isSelected
                     ? "bg-[#1f6feb] text-white shadow-xs"
