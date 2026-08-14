@@ -35,7 +35,7 @@ export const GitHubContributions = () => {
   };
 
   return (
-    <div className="w-full pt-6 pb-2 font-sans select-none">
+    <div className="w-full pt-4 pb-2 font-sans select-none">
       
       {/* Custom CSS overrides for official GitHub Calendar HTML Table */}
       <style jsx global>{`
@@ -43,6 +43,7 @@ export const GitHubContributions = () => {
           border-collapse: separate !important;
           border-spacing: 3px !important;
           margin: 0 auto !important;
+          width: 100% !important;
         }
         .github-calendar-table td.ContributionCalendar-day,
         .github-calendar-table rect.ContributionCalendar-day {
@@ -87,7 +88,7 @@ export const GitHubContributions = () => {
         }
       `}</style>
 
-      <div className="flex flex-col md:flex-row gap-4 items-start">
+      <div className="flex flex-col sm:flex-row gap-4 items-start w-full">
         
         {/* Main Contribution Card (GitHub Dark Theme Styled) */}
         <div className="flex-1 w-full p-5 rounded-xl bg-[#0d1117] border border-[#30363d] text-white shadow-lg">
@@ -97,7 +98,7 @@ export const GitHubContributions = () => {
             <h3 className="text-base font-medium text-[#c9d1d9]">
               <span className="font-semibold text-white">{totalCount} contributions</span> in {selectedYear === "2026" ? "the last year" : selectedYear}
             </h3>
-            <div className="text-xs text-[#8b949e] font-medium hidden sm:flex items-center gap-1">
+            <div className="text-xs text-[#8b949e] font-medium flex items-center gap-1">
               <span>Contribution settings</span>
               <span className="text-[10px]">▼</span>
             </div>
@@ -105,7 +106,7 @@ export const GitHubContributions = () => {
 
           {/* Grid Container */}
           <div className="overflow-x-auto scrollbar-none pb-2">
-            <div className="min-w-[660px] flex justify-center min-h-[140px] items-center">
+            <div className="min-w-[650px] flex justify-center min-h-[140px] items-center">
               {!loading && tableHtml ? (
                 <div
                   className="github-calendar-table w-full overflow-x-auto transition-opacity duration-300"
@@ -143,8 +144,8 @@ export const GitHubContributions = () => {
 
         </div>
 
-        {/* Right Sidebar Year Buttons */}
-        <div className="flex md:flex-col gap-1.5 w-full md:w-20 overflow-x-auto scrollbar-none">
+        {/* Right Sidebar Year Buttons (Visible on Desktop & Mobile) */}
+        <div className="flex sm:flex-col gap-1.5 w-full sm:w-20 overflow-x-auto scrollbar-none">
           {years.map((y) => {
             const isSelected = selectedYear === y;
             return (
@@ -152,7 +153,7 @@ export const GitHubContributions = () => {
                 key={y}
                 type="button"
                 onClick={() => handleYearChange(y)}
-                className={`w-full py-1.5 px-3 rounded-lg text-xs font-semibold text-center transition-colors cursor-pointer ${
+                className={`w-full py-2 px-3 rounded-lg text-xs font-semibold text-center transition-colors cursor-pointer ${
                   isSelected
                     ? "bg-[#1f6feb] text-white shadow-xs"
                     : "text-[#8b949e] hover:text-white hover:bg-[#161b22]"

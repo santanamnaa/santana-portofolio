@@ -13,8 +13,8 @@ export default function Home() {
 
         {/* saugi.me Template Styled Minimalist About Section with Profile Photo */}
         <section id="about" className="py-12 px-4 border-t border-slate-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-900">
-          <div className="container mx-auto max-w-[65ch]">
-            <div className="prose dark:prose-invert max-w-none text-base leading-relaxed text-slate-700 dark:text-gray-300 space-y-5">
+          <div className="container mx-auto max-w-4xl">
+            <div className="prose dark:prose-invert max-w-[65ch] mx-auto text-base leading-relaxed text-slate-700 dark:text-gray-300 space-y-5">
               
               {/* Profile Photo */}
               <div className="flex justify-center mb-6">
@@ -41,16 +41,21 @@ export default function Home() {
                 Feel free to check out my <Link href="/projects" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">projects</Link> or view my <Link href="/achievements" className="text-blue-600 dark:text-blue-400 font-medium hover:underline">achievements</Link>.
               </p>
 
-              {/* Live GitHub Green Contribution Calendar Component */}
-              <GitHubContributions />
+            </div>
 
+            {/* Live GitHub Green Contribution Calendar Component */}
+            <div className="w-full max-w-4xl mx-auto my-8">
+              <GitHubContributions />
+            </div>
+
+            <div className="prose dark:prose-invert max-w-[65ch] mx-auto text-center">
               <hr className="w-24 mx-auto border-t border-slate-200 dark:border-zinc-700 my-8" />
 
               <p className="text-center text-sm text-slate-600 dark:text-gray-400">
                 You can <Link href="/contact" className="text-blue-600 dark:text-blue-400 font-semibold hover:underline">reach me here</Link>.
               </p>
-
             </div>
+
           </div>
         </section>
       </main>
