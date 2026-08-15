@@ -10,28 +10,29 @@ interface DirectPDFViewProps {
 }
 
 export const DirectPDFView = ({ title, pdfFileName }: DirectPDFViewProps) => {
-  const [activeTab, setActiveTab] = useState<"document" | "preview">("document");
+  // Set default tab to "preview" (Direct PDF) per user request
+  const [activeTab, setActiveTab] = useState<"document" | "preview">("preview");
   const pdfPath = `/cv/${pdfFileName}`;
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-zinc-900 text-slate-900 dark:text-gray-100 transition-colors duration-500 font-sans" suppressHydrationWarning>
       <Navbar />
 
-      <main className="py-8 sm:py-12 px-4">
-        <div className="max-w-4xl mx-auto space-y-6">
+      <main className="py-6 sm:py-10 px-4">
+        <div className="max-w-5xl mx-auto space-y-6">
           
-          {/* Header Card */}
-          <div className="bg-white dark:bg-zinc-800/90 border border-slate-200/90 dark:border-zinc-700/80 rounded-2xl p-5 sm:p-8 shadow-sm space-y-4">
+          {/* Header Control Card */}
+          <div className="bg-white dark:bg-zinc-800/90 border border-slate-200/90 dark:border-zinc-700/80 rounded-2xl p-4 sm:p-6 shadow-sm space-y-4">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <div className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider mb-1">
-                  Curriculum Vitae &middot; Official Document
+                  Curriculum Vitae &middot; Official PDF Document
                 </div>
-                <h1 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white font-heading">
+                <h1 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-heading">
                   Santana Mena &mdash; {title}
                 </h1>
-                <p className="text-xs sm:text-sm text-slate-600 dark:text-gray-300 mt-1">
-                  Software Engineer &middot; Computer Science (Minor in Data Science) @ BINUS University
+                <p className="text-xs text-slate-600 dark:text-gray-300 mt-0.5">
+                  File: <code className="font-mono bg-slate-100 dark:bg-zinc-700 px-1.5 py-0.5 rounded text-[11px] text-slate-800 dark:text-slate-200">{pdfFileName}</code>
                 </p>
               </div>
 
@@ -53,6 +54,16 @@ export const DirectPDFView = ({ title, pdfFileName }: DirectPDFViewProps) => {
             {/* View Switcher Tabs */}
             <div className="flex items-center gap-2 pt-2 border-t border-slate-100 dark:border-zinc-700/60">
               <button
+                onClick={() => setActiveTab("preview")}
+                className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-colors ${
+                  activeTab === "preview"
+                    ? "bg-slate-900 dark:bg-white text-white dark:text-slate-950"
+                    : "text-slate-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white"
+                }`}
+              >
+                Direct PDF View
+              </button>
+              <button
                 onClick={() => setActiveTab("document")}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-colors ${
                   activeTab === "document"
@@ -62,20 +73,23 @@ export const DirectPDFView = ({ title, pdfFileName }: DirectPDFViewProps) => {
               >
                 Readable View
               </button>
-              <button
-                onClick={() => setActiveTab("preview")}
-                className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-colors ${
-                  activeTab === "preview"
-                    ? "bg-slate-900 dark:bg-white text-white dark:text-slate-950"
-                    : "text-slate-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white"
-                }`}
-              >
-                PDF View
-              </button>
             </div>
           </div>
 
-          {/* Tab 1: Readable Document View (100% Mobile Responsive, Zero Cutoff) */}
+          {/* Tab 1: Direct PDF View (Default) */}
+          {activeTab === "preview" && (
+            <div className="bg-white dark:bg-zinc-800/90 border border-slate-200/90 dark:border-zinc-700/80 rounded-2xl p-2 sm:p-4 shadow-sm overflow-hidden">
+              <div className="w-full h-[750px] sm:h-[880px] rounded-xl overflow-hidden bg-slate-100 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-700">
+                <iframe
+                  src={`${pdfPath}#toolbar=0&navpanes=0`}
+                  className="w-full h-full border-none"
+                  title={`${title} CV PDF Preview`}
+                />
+              </div>
+            </div>
+          )}
+
+          {/* Tab 2: Readable Document View */}
           {activeTab === "document" && (
             <div className="bg-white dark:bg-zinc-800/90 border border-slate-200/90 dark:border-zinc-700/80 rounded-2xl p-6 sm:p-10 shadow-sm space-y-8">
               
@@ -167,19 +181,6 @@ export const DirectPDFView = ({ title, pdfFileName }: DirectPDFViewProps) => {
                 </div>
               </div>
 
-            </div>
-          )}
-
-          {/* Tab 2: Embedded PDF View */}
-          {activeTab === "preview" && (
-            <div className="bg-white dark:bg-zinc-800/90 border border-slate-200/90 dark:border-zinc-700/80 rounded-2xl p-2 sm:p-4 shadow-sm overflow-hidden">
-              <div className="w-full h-[650px] sm:h-[800px] rounded-xl overflow-hidden bg-slate-100 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-700">
-                <iframe
-                  src={`${pdfPath}#toolbar=0`}
-                  className="w-full h-full border-none"
-                  title={`${title} CV PDF Preview`}
-                />
-              </div>
             </div>
           )}
 
