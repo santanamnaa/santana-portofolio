@@ -18,13 +18,13 @@ export const DirectPDFView = ({ title, pdfFileName }: DirectPDFViewProps) => {
       <header className="sticky top-0 z-50 bg-zinc-900/90 backdrop-blur-md border-b border-zinc-800/80 px-4 py-3 sm:px-6 flex items-center justify-between gap-3 shadow-sm">
         <div className="flex items-center gap-3 min-w-0">
           <Link
-            href="/cv"
+            href="/"
             className="p-2 rounded-xl bg-zinc-800/80 hover:bg-zinc-700 text-zinc-300 hover:text-white transition-colors text-xs sm:text-sm font-medium flex items-center gap-1.5 shrink-0 border border-zinc-700/60"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
-            <span className="hidden sm:inline">Back</span>
+            <span className="hidden sm:inline">Home</span>
           </Link>
 
           <div className="min-w-0">
@@ -37,7 +37,7 @@ export const DirectPDFView = ({ title, pdfFileName }: DirectPDFViewProps) => {
           </div>
         </div>
 
-        {/* Action Buttons: Open & Download (Monochrome, No AI Blue) */}
+        {/* Action Buttons: Open & Download (Monochrome) */}
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <a
             href={pdfPath}
